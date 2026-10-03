@@ -29,7 +29,7 @@ status: черновик
 |---|---|
 | [Журнал решений](TOTL-01%20-%20%D0%A0%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B8%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B/TOTL-01-01-00-0%20-%20%D0%96%D1%83%D1%80%D0%BD%D0%B0%D0%BB%20%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B9.md) | решения Owner по продукту с датой |
 | [Нерешённые вопросы](TOTL-01%20-%20%D0%A0%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B8%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B/TOTL-01-02-00-0%20-%20%D0%9D%D0%B5%D1%80%D0%B5%D1%88%D1%91%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B.md) | указатель на открытые вопросы в Notion (Q&A) |
-| [LEGACY](TOTL-01%20-%20%D0%A0%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B8%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B/TOTL-01-03-00-0%20-%20LEGACY.md) | реестр прежних материалов LEGACY |
+| [Реестр LEGACY в vh_knowledge](https://github.com/make-kzk/vh_knowledge/blob/legacy-registry/%D0%A0%D0%B5%D0%B5%D1%81%D1%82%D1%80%20LEGACY.md) | реестр прежних материалов LEGACY |
 
 ## Порядок чтения
 
