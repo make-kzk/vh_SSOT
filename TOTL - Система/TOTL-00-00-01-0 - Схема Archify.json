@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "VibeHunt: пять направлений и роли",
+    "output": ".archify/architecture-totl-20261003-120000/totl.html",
+    "quality_profile": "showcase",
+    "legend": {
+      "mode": "auto",
+      "entries": {
+        "backend": { "label": "B2B: для компаний" },
+        "cloud": { "label": "B2C: для людей" },
+        "external": { "label": "Роль" }
+      }
+    }
+  },
+  "components": [
+    { "id": "recruiter", "type": "external", "label": "Рекрутёр", "sublabel": "автоматизация найма", "pos": [120, 40], "size": [150, 60] },
+    { "id": "manager", "type": "external", "label": "Нанимающий менеджер", "sublabel": "стиль управления", "pos": [330, 40], "size": [150, 60] },
+    { "id": "hrd", "type": "external", "label": "HRD", "sublabel": "матрица 9 box, граф связей", "pos": [600, 40], "size": [150, 60] },
+    { "id": "recr", "type": "backend", "label": "RECR", "sublabel": "найм", "tag": "MVP", "pos": [240, 190], "size": [150, 60] },
+    { "id": "team", "type": "backend", "label": "TEAM", "sublabel": "команда, TEAM-01 в MVP", "pos": [600, 190], "size": [150, 60] },
+    { "id": "aibot", "type": "backend", "label": "AIBOT", "sublabel": "вовлечённость", "pos": [900, 190], "size": [150, 60] },
+    { "id": "vibe", "type": "cloud", "label": "VIBE", "sublabel": "бесплатный профиль вайба", "tag": "MVP", "pos": [240, 370], "size": [150, 60] },
+    { "id": "waibo", "type": "cloud", "label": "WAIBO", "sublabel": "платные продукты человеку", "pos": [600, 370], "size": [150, 60] },
+    { "id": "candidate", "type": "external", "label": "Кандидат", "sublabel": "карьерный трек и вайб", "pos": [240, 520], "size": [150, 60] },
+    { "id": "specialist", "type": "external", "label": "Специалист", "sublabel": "личный отчёт", "pos": [600, 520], "size": [150, 60] }
+  ],
+  "connections": [
+    { "id": "recruiter-recr", "from": "recruiter", "to": "recr" },
+    { "id": "manager-recr", "from": "manager", "to": "recr" },
+    { "id": "hrd-team", "from": "hrd", "to": "team" },
+    { "id": "team-recr", "from": "team", "to": "recr", "label": "культурный код команды", "variant": "emphasis" },
+    { "id": "vibe-recr", "from": "vibe", "to": "recr", "label": "профиль вайба для мэтча", "variant": "emphasis" },
+    { "id": "vibe-waibo", "from": "vibe", "to": "waibo", "label": "платные продукты поверх", "variant": "dashed" },
+    { "id": "candidate-vibe", "from": "candidate", "to": "vibe" },
+    { "id": "specialist-waibo", "from": "specialist", "to": "waibo" }
+  ],
+  "cards": [
+    { "dot": "cyan", "title": "MVP", "items": ["RECR и VIBE целиком", "из TEAM только TEAM-01 (культурный код команды)"] },
+    { "dot": "amber", "title": "Не показано", "items": ["Связи AIBOT и роли Owner, HRBP, Сотрудник не определены", "Продукты внутри направлений: схемы VIBE и RECR"] }
+  ]
+}
