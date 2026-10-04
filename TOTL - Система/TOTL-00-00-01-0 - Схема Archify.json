@@ -3,7 +3,7 @@
  "diagram_type": "architecture",
  "meta": {
   "title": "VibeHunt: пять направлений и роли",
-  "output": ".archify/architecture-totl-20261004-100000/totl.html",
+  "output": ".archify/architecture-totl-20261004-130000/totl.html",
   "quality_profile": "showcase",
   "legend": {
    "mode": "auto",
@@ -98,12 +98,12 @@
    "label": "AIBOT",
    "sublabel": "вовлечённость",
    "pos": [
-    820,
-    210
+    1180,
+    290
    ],
    "size": [
     140,
-    60
+    84
    ]
   },
   {
@@ -112,8 +112,8 @@
    "label": "VIBE",
    "sublabel": "бесплатный профиль вайба",
    "pos": [
-    500,
-    400
+    460,
+    450
    ],
    "size": [
     140,
@@ -127,8 +127,8 @@
    "label": "WAIBO",
    "sublabel": "платные продукты человеку",
    "pos": [
-    820,
-    400
+    940,
+    450
    ],
    "size": [
     140,
@@ -141,8 +141,8 @@
    "label": "Кандидат",
    "sublabel": "специалист в поисках найма",
    "pos": [
-    500,
-    590
+    630,
+    610
    ],
    "size": [
     140,
@@ -155,12 +155,12 @@
    "label": "Сотрудник",
    "sublabel": "специалист в найме",
    "pos": [
-    1180,
-    300
+    630,
+    290
    ],
    "size": [
     140,
-    100
+    84
    ]
   }
  ],
@@ -227,61 +227,97 @@
    "from": "waibo",
    "to": "aibot",
    "label": "корпоративная версия",
-   "variant": "dashed"
+   "variant": "dashed",
+   "fromSide": "right",
+   "toSide": "bottom"
   },
   {
    "id": "team-aibot",
    "from": "team",
    "to": "aibot",
-   "label": "данные команды"
+   "label": "данные команды",
+   "fromSide": "right",
+   "toSide": "top"
   },
   {
    "id": "cand-vibe",
    "from": "candidate",
    "to": "vibe",
-   "label": "ответы, подтверждение"
+   "label": "ответы, подтверждение",
+   "fromSide": "left",
+   "toSide": "bottom"
   },
   {
    "id": "vibe-cand",
    "from": "vibe",
    "to": "candidate",
-   "label": "профиль вайба"
+   "label": "профиль вайба",
+   "fromSide": "bottom",
+   "toSide": "left"
   },
   {
    "id": "cand-waibo",
    "from": "candidate",
    "to": "waibo",
-   "label": "запрос на коучинг"
+   "label": "запрос на коучинг",
+   "fromSide": "right",
+   "toSide": "bottom"
   },
   {
    "id": "waibo-cand",
    "from": "waibo",
    "to": "candidate",
-   "label": "личный отчёт, колесо баланса, коуч"
+   "label": "личный отчёт, колесо баланса, коуч",
+   "fromSide": "bottom",
+   "toSide": "right"
   },
   {
    "id": "emp-waibo",
    "from": "employee",
    "to": "waibo",
-   "label": "запрос на коучинг"
+   "label": "запрос на коучинг",
+   "fromSide": "bottom",
+   "toSide": "top"
   },
   {
    "id": "waibo-emp",
    "from": "waibo",
    "to": "employee",
-   "label": "личный отчёт, колесо баланса, коуч"
+   "label": "личный отчёт, колесо баланса, коуч",
+   "fromSide": "top",
+   "toSide": "bottom"
   },
   {
    "id": "emp-aibot",
    "from": "employee",
    "to": "aibot",
-   "label": "настроение, ретроспектива"
+   "label": "настроение, ретроспектива",
+   "fromSide": "right",
+   "toSide": "left"
   },
   {
    "id": "aibot-emp",
    "from": "aibot",
    "to": "employee",
-   "label": "личная динамика, рекомендации"
+   "label": "личная динамика, рекомендации",
+   "fromSide": "left",
+   "toSide": "right"
+  },
+  {
+   "id": "emp-vibe",
+   "from": "employee",
+   "to": "vibe",
+   "label": "ответы, подтверждение",
+   "fromSide": "left",
+   "toSide": "top"
+  },
+  {
+   "id": "vibe-emp",
+   "from": "vibe",
+   "to": "employee",
+   "label": "профиль вайба",
+   "fromSide": "top",
+   "toSide": "left"
   }
  ],
  "cards": [
