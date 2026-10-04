@@ -3,7 +3,7 @@
  "diagram_type": "architecture",
  "meta": {
   "title": "RECR: продукты найма и люди",
-  "output": ".archify/architecture-recr-20261005-100000/recr.html",
+  "output": ".archify/architecture-recr-20261005-110000/recr.html",
   "quality_profile": "showcase",
   "legend": {
    "mode": "auto",
@@ -179,13 +179,13 @@
    "id": "director",
    "type": "external",
    "label": "Директор",
-   "sublabel": "интервью",
+   "sublabel": "директор подразделения",
    "pos": [
-    860,
+    840,
     40
    ],
    "size": [
-    150,
+    170,
     60
    ]
   },
