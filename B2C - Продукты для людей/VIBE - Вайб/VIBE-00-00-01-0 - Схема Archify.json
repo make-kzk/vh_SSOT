@@ -3,7 +3,7 @@
  "diagram_type": "architecture",
  "meta": {
   "title": "VIBE: продукты и люди",
-  "output": ".archify/architecture-vibe-20261004-160000/vibe.html",
+  "output": ".archify/architecture-vibe-20261004-180000/vibe.html",
   "quality_profile": "showcase",
   "legend": {
    "mode": "auto",
@@ -153,7 +153,7 @@
    "id": "cand-vibe01",
    "from": "cand",
    "to": "vibe01",
-   "variant": "security",
+   "variant": "default",
    "fromSide": "right",
    "toSide": "left"
   },
@@ -161,7 +161,7 @@
    "id": "vibe01-cand",
    "from": "vibe01",
    "to": "cand",
-   "variant": "dashed",
+   "variant": "emphasis",
    "fromSide": "left",
    "toSide": "right"
   },
@@ -169,7 +169,7 @@
    "id": "emp-vibe01",
    "from": "emp",
    "to": "vibe01",
-   "variant": "security",
+   "variant": "default",
    "fromSide": "left",
    "toSide": "right"
   },
@@ -177,7 +177,7 @@
    "id": "vibe01-emp",
    "from": "vibe01",
    "to": "emp",
-   "variant": "dashed",
+   "variant": "emphasis",
    "fromSide": "right",
    "toSide": "left"
   },
@@ -185,7 +185,7 @@
    "id": "cand-vibe02",
    "from": "cand",
    "to": "vibe02",
-   "variant": "security",
+   "variant": "default",
    "fromSide": "right",
    "toSide": "left"
   },
@@ -193,7 +193,7 @@
    "id": "vibe02-cand",
    "from": "vibe02",
    "to": "cand",
-   "variant": "dashed",
+   "variant": "emphasis",
    "fromSide": "left",
    "toSide": "right"
   },
@@ -201,7 +201,7 @@
    "id": "emp-vibe02",
    "from": "emp",
    "to": "vibe02",
-   "variant": "security",
+   "variant": "default",
    "fromSide": "left",
    "toSide": "right"
   },
@@ -209,7 +209,7 @@
    "id": "vibe02-emp",
    "from": "vibe02",
    "to": "emp",
-   "variant": "dashed",
+   "variant": "emphasis",
    "fromSide": "right",
    "toSide": "left"
   },
@@ -217,7 +217,7 @@
    "id": "cand-vibe03",
    "from": "cand",
    "to": "vibe03",
-   "variant": "security",
+   "variant": "default",
    "fromSide": "right",
    "toSide": "left"
   },
@@ -225,7 +225,7 @@
    "id": "vibe03-cand",
    "from": "vibe03",
    "to": "cand",
-   "variant": "dashed",
+   "variant": "emphasis",
    "fromSide": "left",
    "toSide": "right"
   },
@@ -233,7 +233,7 @@
    "id": "emp-vibe03",
    "from": "emp",
    "to": "vibe03",
-   "variant": "security",
+   "variant": "default",
    "fromSide": "left",
    "toSide": "right"
   },
@@ -241,7 +241,7 @@
    "id": "vibe03-emp",
    "from": "vibe03",
    "to": "emp",
-   "variant": "dashed",
+   "variant": "emphasis",
    "fromSide": "right",
    "toSide": "left"
   },
@@ -249,7 +249,7 @@
    "id": "cand-vibe04",
    "from": "cand",
    "to": "vibe04",
-   "variant": "security",
+   "variant": "default",
    "fromSide": "right",
    "toSide": "left"
   },
@@ -257,7 +257,7 @@
    "id": "vibe04-cand",
    "from": "vibe04",
    "to": "cand",
-   "variant": "dashed",
+   "variant": "emphasis",
    "fromSide": "left",
    "toSide": "right"
   },
@@ -265,7 +265,7 @@
    "id": "emp-vibe04",
    "from": "emp",
    "to": "vibe04",
-   "variant": "security",
+   "variant": "default",
    "fromSide": "left",
    "toSide": "right"
   },
@@ -273,7 +273,7 @@
    "id": "vibe04-emp",
    "from": "vibe04",
    "to": "emp",
-   "variant": "dashed",
+   "variant": "emphasis",
    "fromSide": "right",
    "toSide": "left"
   },
@@ -281,7 +281,7 @@
    "id": "cand-vibe05",
    "from": "cand",
    "to": "vibe05",
-   "variant": "security",
+   "variant": "default",
    "fromSide": "right",
    "toSide": "left"
   },
@@ -289,7 +289,7 @@
    "id": "vibe05-cand",
    "from": "vibe05",
    "to": "cand",
-   "variant": "dashed",
+   "variant": "emphasis",
    "fromSide": "left",
    "toSide": "right"
   },
@@ -297,7 +297,7 @@
    "id": "emp-vibe05",
    "from": "emp",
    "to": "vibe05",
-   "variant": "security",
+   "variant": "default",
    "fromSide": "left",
    "toSide": "right"
   },
@@ -305,7 +305,7 @@
    "id": "vibe05-emp",
    "from": "vibe05",
    "to": "emp",
-   "variant": "dashed",
+   "variant": "emphasis",
    "fromSide": "right",
    "toSide": "left"
   },
@@ -314,7 +314,7 @@
    "from": "vibe05",
    "to": "recr01",
    "label": "сравнение с вакансией",
-   "variant": "emphasis",
+   "variant": "dashed",
    "fromSide": "bottom",
    "toSide": "top"
   },
@@ -323,7 +323,7 @@
    "from": "vibe05",
    "to": "team01",
    "label": "сравнение с культурным кодом",
-   "variant": "emphasis",
+   "variant": "dashed",
    "fromSide": "bottom",
    "toSide": "top"
   }
@@ -333,8 +333,9 @@
    "dot": "amber",
    "title": "Стрелки людей",
    "items": [
-    "Оранжевая: вход, ответы и подтверждение результата",
-    "Фиолетовая: выход, результат продукта человеку",
+    "Серая: вход, ответы и подтверждение результата",
+    "Зелёная: выход, результат продукта человеку",
+    "Фиолетовая пунктирная: передача в другое направление",
     "Подтверждение результата каждого продукта: порог 97%"
    ]
   },
