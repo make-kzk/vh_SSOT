@@ -3,7 +3,7 @@
  "diagram_type": "architecture",
  "meta": {
   "title": "RECR: продукты найма и люди",
-  "output": ".archify/architecture-recr-20261004-270000/recr.html",
+  "output": ".archify/architecture-recr-20261004-280000/recr.html",
   "quality_profile": "showcase",
   "legend": {
    "mode": "auto",
@@ -335,7 +335,7 @@
    "from": "recruiter",
    "to": "candidate",
    "variant": "emphasis",
-   "label": "оффер"
+   "label": "оффер через чат-бот"
   },
   {
    "id": "emp-r6",
@@ -343,6 +343,13 @@
    "to": "r6",
    "variant": "default",
    "label": "информация 7-90 дней"
+  },
+  {
+   "id": "cand-rec",
+   "from": "candidate",
+   "to": "recruiter",
+   "variant": "default",
+   "label": "ответы и правки условий через чат-бот"
   }
  ],
  "cards": [
