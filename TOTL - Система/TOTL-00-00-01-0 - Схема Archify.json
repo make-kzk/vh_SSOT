@@ -3,7 +3,7 @@
  "diagram_type": "architecture",
  "meta": {
   "title": "VibeHunt: пять направлений и роли",
-  "output": ".archify/architecture-totl-20261004-130000/totl.html",
+  "output": ".archify/architecture-totl-20261004-170000/totl.html",
   "quality_profile": "showcase",
   "legend": {
    "mode": "auto",
@@ -169,37 +169,43 @@
    "id": "recruiter-in",
    "from": "recruiter",
    "to": "recr",
-   "label": "оценка интервью, решение"
+   "label": "оценка интервью, решение",
+   "variant": "security"
   },
   {
    "id": "recr-recruiter",
    "from": "recr",
    "to": "recruiter",
-   "label": "топ10, бланк оценки"
+   "label": "топ10, бланк оценки",
+   "variant": "dashed"
   },
   {
    "id": "manager-in",
    "from": "manager",
    "to": "recr",
-   "label": "точность отчёта, оценки 7/14/28"
+   "label": "точность отчёта, оценки 7/14/28",
+   "variant": "security"
   },
   {
    "id": "recr-manager",
    "from": "recr",
    "to": "manager",
-   "label": "отчёт о прогнозе"
+   "label": "отчёт о прогнозе",
+   "variant": "dashed"
   },
   {
    "id": "hrd-in",
    "from": "hrd",
    "to": "team",
-   "label": "данные команды"
+   "label": "данные команды",
+   "variant": "security"
   },
   {
    "id": "team-hrd",
    "from": "team",
    "to": "hrd",
-   "label": "культурный код команды"
+   "label": "культурный код команды",
+   "variant": "dashed"
   },
   {
    "id": "team-recr",
@@ -220,14 +226,14 @@
    "from": "vibe",
    "to": "waibo",
    "label": "платные продукты поверх",
-   "variant": "dashed"
+   "variant": "emphasis"
   },
   {
    "id": "waibo-aibot",
    "from": "waibo",
    "to": "aibot",
    "label": "корпоративная версия",
-   "variant": "dashed",
+   "variant": "emphasis",
    "fromSide": "right",
    "toSide": "bottom"
   },
@@ -237,7 +243,8 @@
    "to": "aibot",
    "label": "данные команды",
    "fromSide": "right",
-   "toSide": "top"
+   "toSide": "top",
+   "variant": "emphasis"
   },
   {
    "id": "cand-vibe",
@@ -245,7 +252,8 @@
    "to": "vibe",
    "label": "ответы, подтверждение",
    "fromSide": "left",
-   "toSide": "bottom"
+   "toSide": "bottom",
+   "variant": "security"
   },
   {
    "id": "vibe-cand",
@@ -253,7 +261,8 @@
    "to": "candidate",
    "label": "профиль вайба",
    "fromSide": "bottom",
-   "toSide": "left"
+   "toSide": "left",
+   "variant": "dashed"
   },
   {
    "id": "cand-waibo",
@@ -261,7 +270,8 @@
    "to": "waibo",
    "label": "запрос на коучинг",
    "fromSide": "right",
-   "toSide": "bottom"
+   "toSide": "bottom",
+   "variant": "security"
   },
   {
    "id": "waibo-cand",
@@ -269,7 +279,8 @@
    "to": "candidate",
    "label": "личный отчёт, колесо баланса, коуч",
    "fromSide": "bottom",
-   "toSide": "right"
+   "toSide": "right",
+   "variant": "dashed"
   },
   {
    "id": "emp-waibo",
@@ -277,7 +288,8 @@
    "to": "waibo",
    "label": "запрос на коучинг",
    "fromSide": "bottom",
-   "toSide": "top"
+   "toSide": "top",
+   "variant": "security"
   },
   {
    "id": "waibo-emp",
@@ -285,7 +297,8 @@
    "to": "employee",
    "label": "личный отчёт, колесо баланса, коуч",
    "fromSide": "top",
-   "toSide": "bottom"
+   "toSide": "bottom",
+   "variant": "dashed"
   },
   {
    "id": "emp-aibot",
@@ -293,7 +306,8 @@
    "to": "aibot",
    "label": "настроение, ретроспектива",
    "fromSide": "right",
-   "toSide": "left"
+   "toSide": "left",
+   "variant": "security"
   },
   {
    "id": "aibot-emp",
@@ -301,7 +315,8 @@
    "to": "employee",
    "label": "личная динамика, рекомендации",
    "fromSide": "left",
-   "toSide": "right"
+   "toSide": "right",
+   "variant": "dashed"
   },
   {
    "id": "emp-vibe",
@@ -309,7 +324,8 @@
    "to": "vibe",
    "label": "ответы, подтверждение",
    "fromSide": "left",
-   "toSide": "top"
+   "toSide": "top",
+   "variant": "security"
   },
   {
    "id": "vibe-emp",
@@ -317,7 +333,8 @@
    "to": "employee",
    "label": "профиль вайба",
    "fromSide": "top",
-   "toSide": "left"
+   "toSide": "left",
+   "variant": "dashed"
   }
  ],
  "cards": [
@@ -335,7 +352,8 @@
    "items": [
     "Кандидат: специалист в поисках найма",
     "Сотрудник: специалист в найме",
-    "Стрелки: что передаётся (вход от человека, выход к человеку)"
+    "Оранжевая стрелка: вход от человека. Фиолетовая: выход к человеку",
+    "Зелёная стрелка: передача между направлениями"
    ]
   }
  ]

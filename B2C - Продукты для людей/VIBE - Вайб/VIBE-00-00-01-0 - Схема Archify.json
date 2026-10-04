@@ -1,0 +1,350 @@
+{
+ "schema_version": 1,
+ "diagram_type": "architecture",
+ "meta": {
+  "title": "VIBE: продукты и люди",
+  "output": ".archify/architecture-vibe-20261004-160000/vibe.html",
+  "quality_profile": "showcase",
+  "legend": {
+   "mode": "auto",
+   "entries": {
+    "backend": {
+     "label": "B2B: другие направления"
+    },
+    "cloud": {
+     "label": "B2C: продукты VIBE"
+    },
+    "external": {
+     "label": "Роль"
+    }
+   }
+  }
+ },
+ "components": [
+  {
+   "id": "vibe01",
+   "type": "cloud",
+   "label": "VIBE-01",
+   "sublabel": "карьерный трек",
+   "pos": [
+    410,
+    60
+   ],
+   "size": [
+    160,
+    56
+   ]
+  },
+  {
+   "id": "vibe02",
+   "type": "cloud",
+   "label": "VIBE-02",
+   "sublabel": "карьерный вайб",
+   "pos": [
+    410,
+    140
+   ],
+   "size": [
+    160,
+    56
+   ]
+  },
+  {
+   "id": "vibe03",
+   "type": "cloud",
+   "label": "VIBE-03",
+   "sublabel": "стиль поведения",
+   "pos": [
+    410,
+    220
+   ],
+   "size": [
+    160,
+    56
+   ]
+  },
+  {
+   "id": "vibe04",
+   "type": "cloud",
+   "label": "VIBE-04",
+   "sublabel": "стиль коммуникации",
+   "pos": [
+    410,
+    300
+   ],
+   "size": [
+    160,
+    56
+   ]
+  },
+  {
+   "id": "vibe05",
+   "type": "cloud",
+   "label": "VIBE-05",
+   "sublabel": "подходящие позиции",
+   "pos": [
+    410,
+    380
+   ],
+   "size": [
+    160,
+    56
+   ]
+  },
+  {
+   "id": "cand",
+   "type": "external",
+   "label": "Кандидат",
+   "sublabel": "специалист в поисках найма",
+   "pos": [
+    60,
+    60
+   ],
+   "size": [
+    170,
+    376
+   ]
+  },
+  {
+   "id": "emp",
+   "type": "external",
+   "label": "Сотрудник",
+   "sublabel": "специалист в найме",
+   "pos": [
+    750,
+    60
+   ],
+   "size": [
+    170,
+    376
+   ]
+  },
+  {
+   "id": "recr01",
+   "type": "backend",
+   "label": "RECR-01",
+   "sublabel": "вакансия",
+   "pos": [
+    330,
+    556
+   ],
+   "size": [
+    150,
+    60
+   ]
+  },
+  {
+   "id": "team01",
+   "type": "backend",
+   "label": "TEAM-01",
+   "sublabel": "культурный код команды",
+   "pos": [
+    520,
+    556
+   ],
+   "size": [
+    170,
+    60
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "id": "cand-vibe01",
+   "from": "cand",
+   "to": "vibe01",
+   "variant": "security",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  {
+   "id": "vibe01-cand",
+   "from": "vibe01",
+   "to": "cand",
+   "variant": "dashed",
+   "fromSide": "left",
+   "toSide": "right"
+  },
+  {
+   "id": "emp-vibe01",
+   "from": "emp",
+   "to": "vibe01",
+   "variant": "security",
+   "fromSide": "left",
+   "toSide": "right"
+  },
+  {
+   "id": "vibe01-emp",
+   "from": "vibe01",
+   "to": "emp",
+   "variant": "dashed",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  {
+   "id": "cand-vibe02",
+   "from": "cand",
+   "to": "vibe02",
+   "variant": "security",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  {
+   "id": "vibe02-cand",
+   "from": "vibe02",
+   "to": "cand",
+   "variant": "dashed",
+   "fromSide": "left",
+   "toSide": "right"
+  },
+  {
+   "id": "emp-vibe02",
+   "from": "emp",
+   "to": "vibe02",
+   "variant": "security",
+   "fromSide": "left",
+   "toSide": "right"
+  },
+  {
+   "id": "vibe02-emp",
+   "from": "vibe02",
+   "to": "emp",
+   "variant": "dashed",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  {
+   "id": "cand-vibe03",
+   "from": "cand",
+   "to": "vibe03",
+   "variant": "security",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  {
+   "id": "vibe03-cand",
+   "from": "vibe03",
+   "to": "cand",
+   "variant": "dashed",
+   "fromSide": "left",
+   "toSide": "right"
+  },
+  {
+   "id": "emp-vibe03",
+   "from": "emp",
+   "to": "vibe03",
+   "variant": "security",
+   "fromSide": "left",
+   "toSide": "right"
+  },
+  {
+   "id": "vibe03-emp",
+   "from": "vibe03",
+   "to": "emp",
+   "variant": "dashed",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  {
+   "id": "cand-vibe04",
+   "from": "cand",
+   "to": "vibe04",
+   "variant": "security",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  {
+   "id": "vibe04-cand",
+   "from": "vibe04",
+   "to": "cand",
+   "variant": "dashed",
+   "fromSide": "left",
+   "toSide": "right"
+  },
+  {
+   "id": "emp-vibe04",
+   "from": "emp",
+   "to": "vibe04",
+   "variant": "security",
+   "fromSide": "left",
+   "toSide": "right"
+  },
+  {
+   "id": "vibe04-emp",
+   "from": "vibe04",
+   "to": "emp",
+   "variant": "dashed",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  {
+   "id": "cand-vibe05",
+   "from": "cand",
+   "to": "vibe05",
+   "variant": "security",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  {
+   "id": "vibe05-cand",
+   "from": "vibe05",
+   "to": "cand",
+   "variant": "dashed",
+   "fromSide": "left",
+   "toSide": "right"
+  },
+  {
+   "id": "emp-vibe05",
+   "from": "emp",
+   "to": "vibe05",
+   "variant": "security",
+   "fromSide": "left",
+   "toSide": "right"
+  },
+  {
+   "id": "vibe05-emp",
+   "from": "vibe05",
+   "to": "emp",
+   "variant": "dashed",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  {
+   "id": "v5-recr01",
+   "from": "vibe05",
+   "to": "recr01",
+   "label": "сравнение с вакансией",
+   "variant": "emphasis",
+   "fromSide": "bottom",
+   "toSide": "top"
+  },
+  {
+   "id": "v5-team01",
+   "from": "vibe05",
+   "to": "team01",
+   "label": "сравнение с культурным кодом",
+   "variant": "emphasis",
+   "fromSide": "bottom",
+   "toSide": "top"
+  }
+ ],
+ "cards": [
+  {
+   "dot": "amber",
+   "title": "Стрелки людей",
+   "items": [
+    "Оранжевая: вход, ответы и подтверждение результата",
+    "Фиолетовая: выход, результат продукта человеку",
+    "Подтверждение результата каждого продукта: порог 97%"
+   ]
+  },
+  {
+   "dot": "cyan",
+   "title": "Выходы в другие направления",
+   "items": [
+    "VIBE-05: сравнение с вакансией (RECR-01) и с культурным кодом команды (TEAM-01)",
+    "Профиль вайба из VIBE-01…04 идёт в мэтч RECR-02, на схеме не показан"
+   ]
+  }
+ ]
+}
