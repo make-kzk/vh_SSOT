@@ -3,7 +3,7 @@
  "diagram_type": "architecture",
  "meta": {
   "title": "VIBE: вход, продукты, выход",
-  "output": ".archify/architecture-vibe-20261004-190000/vibe.html",
+  "output": ".archify/architecture-vibe-20261004-240000/vibe.html",
   "quality_profile": "showcase",
   "legend": {
    "mode": "auto",
@@ -90,7 +90,7 @@
    "id": "vibe02",
    "type": "cloud",
    "label": "VIBE-02",
-   "sublabel": "карьерный вайб",
+   "sublabel": "мировоззрение",
    "pos": [
     435,
     170
