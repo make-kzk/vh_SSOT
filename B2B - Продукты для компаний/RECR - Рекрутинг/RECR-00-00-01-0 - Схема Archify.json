@@ -3,7 +3,7 @@
  "diagram_type": "architecture",
  "meta": {
   "title": "RECR: продукты найма и люди",
-  "output": ".archify/architecture-recr-20261004-280000/recr.html",
+  "output": ".archify/architecture-recr-20261004-290000/recr.html",
   "quality_profile": "showcase",
   "legend": {
    "mode": "auto",
@@ -125,8 +125,8 @@
    "label": "Нанимающий менеджер",
    "sublabel": "руководитель команды",
    "pos": [
-    760,
-    60
+    640,
+    40
    ],
    "size": [
     190,
@@ -350,6 +350,13 @@
    "to": "recruiter",
    "variant": "default",
    "label": "ответы и правки условий через чат-бот"
+  },
+  {
+   "id": "man-r3",
+   "from": "manager",
+   "to": "r3",
+   "variant": "default",
+   "label": "интервью с менеджером"
   }
  ],
  "cards": [
