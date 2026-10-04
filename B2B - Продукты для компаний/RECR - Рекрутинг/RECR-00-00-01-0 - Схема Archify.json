@@ -1,0 +1,325 @@
+{
+ "schema_version": 1,
+ "diagram_type": "architecture",
+ "meta": {
+  "title": "RECR: продукты найма и люди",
+  "output": ".archify/architecture-recr-20261004-210000/recr.html",
+  "quality_profile": "showcase",
+  "legend": {
+   "mode": "auto",
+   "entries": {
+    "backend": {
+     "label": "Продукт RECR и другие B2B"
+    },
+    "cloud": {
+     "label": "Другое направление"
+    },
+    "external": {
+     "label": "Роль"
+    }
+   }
+  }
+ },
+ "components": [
+  {
+   "id": "r1",
+   "type": "backend",
+   "label": "RECR-01",
+   "sublabel": "вакансия",
+   "pos": [
+    40,
+    300
+   ],
+   "size": [
+    150,
+    60
+   ]
+  },
+  {
+   "id": "r2",
+   "type": "backend",
+   "label": "RECR-02",
+   "sublabel": "подбор",
+   "pos": [
+    240,
+    300
+   ],
+   "size": [
+    150,
+    60
+   ]
+  },
+  {
+   "id": "r3",
+   "type": "backend",
+   "label": "RECR-03",
+   "sublabel": "интервью",
+   "pos": [
+    440,
+    300
+   ],
+   "size": [
+    150,
+    60
+   ]
+  },
+  {
+   "id": "r4",
+   "type": "backend",
+   "label": "RECR-04",
+   "sublabel": "прогноз",
+   "pos": [
+    640,
+    300
+   ],
+   "size": [
+    150,
+    60
+   ]
+  },
+  {
+   "id": "r5",
+   "type": "backend",
+   "label": "RECR-05",
+   "sublabel": "оффер",
+   "pos": [
+    840,
+    300
+   ],
+   "size": [
+    150,
+    60
+   ]
+  },
+  {
+   "id": "r6",
+   "type": "backend",
+   "label": "RECR-06",
+   "sublabel": "адаптация",
+   "pos": [
+    1040,
+    300
+   ],
+   "size": [
+    150,
+    60
+   ]
+  },
+  {
+   "id": "recruiter",
+   "type": "external",
+   "label": "Рекрутёр",
+   "sublabel": "найм",
+   "pos": [
+    100,
+    60
+   ],
+   "size": [
+    150,
+    60
+   ]
+  },
+  {
+   "id": "manager",
+   "type": "external",
+   "label": "Нанимающий менеджер",
+   "sublabel": "руководитель команды",
+   "pos": [
+    760,
+    60
+   ],
+   "size": [
+    190,
+    60
+   ]
+  },
+  {
+   "id": "candidate",
+   "type": "external",
+   "label": "Кандидат",
+   "sublabel": "получает оффер",
+   "pos": [
+    840,
+    560
+   ],
+   "size": [
+    150,
+    60
+   ]
+  },
+  {
+   "id": "team01",
+   "type": "backend",
+   "label": "TEAM-01",
+   "sublabel": "культурный код команды",
+   "pos": [
+    40,
+    560
+   ],
+   "size": [
+    170,
+    60
+   ]
+  },
+  {
+   "id": "vibe",
+   "type": "cloud",
+   "label": "VIBE",
+   "sublabel": "профиль вайба",
+   "pos": [
+    440,
+    560
+   ],
+   "size": [
+    150,
+    60
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "id": "o0",
+   "from": "r1",
+   "to": "r2",
+   "variant": "dashed"
+  },
+  {
+   "id": "o1",
+   "from": "r2",
+   "to": "r3",
+   "variant": "dashed"
+  },
+  {
+   "id": "o2",
+   "from": "r3",
+   "to": "r4",
+   "variant": "dashed"
+  },
+  {
+   "id": "o3",
+   "from": "r4",
+   "to": "r5",
+   "variant": "dashed"
+  },
+  {
+   "id": "o4",
+   "from": "r5",
+   "to": "r6",
+   "variant": "dashed"
+  },
+  {
+   "id": "t1",
+   "from": "team01",
+   "to": "r1",
+   "variant": "dashed",
+   "label": "код команды"
+  },
+  {
+   "id": "t2",
+   "from": "team01",
+   "to": "r2",
+   "variant": "dashed"
+  },
+  {
+   "id": "t4",
+   "from": "team01",
+   "to": "r4",
+   "variant": "dashed"
+  },
+  {
+   "id": "v2",
+   "from": "vibe",
+   "to": "r2",
+   "variant": "dashed",
+   "label": "профиль вайба"
+  },
+  {
+   "id": "v4",
+   "from": "vibe",
+   "to": "r4",
+   "variant": "dashed"
+  },
+  {
+   "id": "rec-r1",
+   "from": "recruiter",
+   "to": "r1",
+   "variant": "default",
+   "label": "описание вакансии, опросник"
+  },
+  {
+   "id": "r2-rec",
+   "from": "r2",
+   "to": "recruiter",
+   "variant": "emphasis",
+   "label": "топ10 кандидатов"
+  },
+  {
+   "id": "rec-r3",
+   "from": "recruiter",
+   "to": "r3",
+   "variant": "default",
+   "label": "оценка интервью, решение"
+  },
+  {
+   "id": "r3-rec",
+   "from": "r3",
+   "to": "recruiter",
+   "variant": "emphasis",
+   "label": "бланк, итоговое решение"
+  },
+  {
+   "id": "man-r4",
+   "from": "manager",
+   "to": "r4",
+   "variant": "default",
+   "label": "точность отчёта"
+  },
+  {
+   "id": "r4-man",
+   "from": "r4",
+   "to": "manager",
+   "variant": "emphasis",
+   "label": "отчёт о прогнозе"
+  },
+  {
+   "id": "man-r6",
+   "from": "manager",
+   "to": "r6",
+   "variant": "default",
+   "label": "оценки 7, 14, 28 дней"
+  },
+  {
+   "id": "r6-man",
+   "from": "r6",
+   "to": "manager",
+   "variant": "emphasis",
+   "label": "план адаптации"
+  },
+  {
+   "id": "r5-cand",
+   "from": "r5",
+   "to": "candidate",
+   "variant": "emphasis",
+   "label": "оффер"
+  }
+ ],
+ "cards": [
+  {
+   "dot": "amber",
+   "title": "Стрелки",
+   "items": [
+    "Серая: вход от человека",
+    "Зелёная: выход к человеку",
+    "Фиолетовая пунктирная: передача между продуктами и направлениями"
+   ]
+  },
+  {
+   "dot": "cyan",
+   "title": "Порядок найма",
+   "items": [
+    "RECR-01 вакансия, RECR-02 подбор, RECR-03 интервью",
+    "RECR-04 прогноз перед оффером, RECR-05 оффер, RECR-06 адаптация"
+   ]
+  }
+ ]
+}
