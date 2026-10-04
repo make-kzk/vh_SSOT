@@ -2,17 +2,26 @@
  "schema_version": 1,
  "diagram_type": "architecture",
  "meta": {
-  "title": "VIBE: продукты и люди",
-  "output": ".archify/architecture-vibe-20261004-180000/vibe.html",
+  "title": "VIBE: вход, продукты, выход",
+  "output": ".archify/architecture-vibe-20261004-190000/vibe.html",
   "quality_profile": "showcase",
   "legend": {
    "mode": "auto",
    "entries": {
-    "backend": {
-     "label": "B2B: другие направления"
+    "frontend": {
+     "label": "Вход продукта"
     },
     "cloud": {
-     "label": "B2C: продукты VIBE"
+     "label": "Продукт"
+    },
+    "database": {
+     "label": "Выход продукта"
+    },
+    "messagebus": {
+     "label": "Профиль вайба"
+    },
+    "backend": {
+     "label": "Другие направления"
     },
     "external": {
      "label": "Роль"
@@ -22,16 +31,58 @@
  },
  "components": [
   {
+   "id": "invibe01",
+   "type": "frontend",
+   "label": "вход",
+   "sublabel": "резюме и кейсы",
+   "pos": [
+    205,
+    60
+   ],
+   "size": [
+    195,
+    56
+   ]
+  },
+  {
    "id": "vibe01",
    "type": "cloud",
    "label": "VIBE-01",
    "sublabel": "карьерный трек",
    "pos": [
-    410,
+    435,
     60
    ],
    "size": [
-    160,
+    125,
+    56
+   ]
+  },
+  {
+   "id": "outvibe01",
+   "type": "database",
+   "label": "выход",
+   "sublabel": "презентация опыта и портфолио",
+   "pos": [
+    600,
+    60
+   ],
+   "size": [
+    270,
+    56
+   ]
+  },
+  {
+   "id": "invibe02",
+   "type": "frontend",
+   "label": "вход",
+   "sublabel": "SWRZ, ABCD, NHUJ, COGN",
+   "pos": [
+    205,
+    170
+   ],
+   "size": [
+    195,
     56
    ]
   },
@@ -41,11 +92,39 @@
    "label": "VIBE-02",
    "sublabel": "карьерный вайб",
    "pos": [
-    410,
-    140
+    435,
+    170
    ],
    "size": [
-    160,
+    125,
+    56
+   ]
+  },
+  {
+   "id": "outvibe02",
+   "type": "database",
+   "label": "выход",
+   "sublabel": "ценности, драйверы, неопределённость, мышление",
+   "pos": [
+    600,
+    170
+   ],
+   "size": [
+    270,
+    56
+   ]
+  },
+  {
+   "id": "invibe03",
+   "type": "frontend",
+   "label": "вход",
+   "sublabel": "QWER, RH83, ZVER",
+   "pos": [
+    205,
+    280
+   ],
+   "size": [
+    195,
     56
    ]
   },
@@ -55,11 +134,39 @@
    "label": "VIBE-03",
    "sublabel": "стиль поведения",
    "pos": [
-    410,
-    220
+    435,
+    280
    ],
    "size": [
-    160,
+    125,
+    56
+   ]
+  },
+  {
+   "id": "outvibe03",
+   "type": "database",
+   "label": "выход",
+   "sublabel": "поведение, роль в команде, стиль управления",
+   "pos": [
+    600,
+    280
+   ],
+   "size": [
+    270,
+    56
+   ]
+  },
+  {
+   "id": "invibe04",
+   "type": "frontend",
+   "label": "вход",
+   "sublabel": "YOPI",
+   "pos": [
+    205,
+    390
+   ],
+   "size": [
+    195,
     56
    ]
   },
@@ -69,11 +176,39 @@
    "label": "VIBE-04",
    "sublabel": "стиль коммуникации",
    "pos": [
-    410,
-    300
+    435,
+    390
    ],
    "size": [
-    160,
+    125,
+    56
+   ]
+  },
+  {
+   "id": "outvibe04",
+   "type": "database",
+   "label": "выход",
+   "sublabel": "тип взаимодействия в команде",
+   "pos": [
+    600,
+    390
+   ],
+   "size": [
+    270,
+    56
+   ]
+  },
+  {
+   "id": "invibe05",
+   "type": "frontend",
+   "label": "вход",
+   "sublabel": "результаты VIBE-01…04",
+   "pos": [
+    205,
+    500
+   ],
+   "size": [
+    195,
     56
    ]
   },
@@ -83,11 +218,39 @@
    "label": "VIBE-05",
    "sublabel": "подходящие позиции",
    "pos": [
-    410,
-    380
+    435,
+    500
    ],
    "size": [
-    160,
+    125,
+    56
+   ]
+  },
+  {
+   "id": "outvibe05",
+   "type": "database",
+   "label": "выход",
+   "sublabel": "роли, компании, атмосфера, стиль руководителя",
+   "pos": [
+    600,
+    500
+   ],
+   "size": [
+    270,
+    56
+   ]
+  },
+  {
+   "id": "profile",
+   "type": "messagebus",
+   "label": "Профиль вайба",
+   "sublabel": "итог VIBE",
+   "pos": [
+    920,
+    280
+   ],
+   "size": [
+    140,
     56
    ]
   },
@@ -97,12 +260,12 @@
    "label": "Кандидат",
    "sublabel": "специалист в поисках найма",
    "pos": [
-    60,
+    10,
     60
    ],
    "size": [
-    170,
-    376
+    150,
+    70
    ]
   },
   {
@@ -111,240 +274,276 @@
    "label": "Сотрудник",
    "sublabel": "специалист в найме",
    "pos": [
-    750,
-    60
-   ],
-   "size": [
-    170,
-    376
-   ]
-  },
-  {
-   "id": "recr01",
-   "type": "backend",
-   "label": "RECR-01",
-   "sublabel": "вакансия",
-   "pos": [
-    330,
-    556
+    10,
+    380
    ],
    "size": [
     150,
-    60
+    70
    ]
   },
   {
-   "id": "team01",
+   "id": "recr",
    "type": "backend",
-   "label": "TEAM-01",
-   "sublabel": "культурный код команды",
+   "label": "RECR",
+   "sublabel": "найм",
    "pos": [
-    520,
-    556
+    1130,
+    60
    ],
    "size": [
-    170,
-    60
+    120,
+    56
+   ]
+  },
+  {
+   "id": "waibo",
+   "type": "cloud",
+   "label": "WAIBO",
+   "sublabel": "платные продукты",
+   "pos": [
+    1130,
+    170
+   ],
+   "size": [
+    120,
+    56
+   ]
+  },
+  {
+   "id": "team",
+   "type": "backend",
+   "label": "TEAM",
+   "sublabel": "команда",
+   "pos": [
+    1130,
+    280
+   ],
+   "size": [
+    120,
+    56
+   ]
+  },
+  {
+   "id": "aibot",
+   "type": "backend",
+   "label": "AIBOT",
+   "sublabel": "вовлечённость",
+   "pos": [
+    1130,
+    390
+   ],
+   "size": [
+    120,
+    56
    ]
   }
  ],
  "connections": [
   {
-   "id": "cand-vibe01",
-   "from": "cand",
+   "id": "i-vibe01",
+   "from": "invibe01",
    "to": "vibe01",
    "variant": "default",
    "fromSide": "right",
    "toSide": "left"
   },
   {
-   "id": "vibe01-cand",
+   "id": "o-vibe01",
    "from": "vibe01",
-   "to": "cand",
-   "variant": "emphasis",
-   "fromSide": "left",
-   "toSide": "right"
-  },
-  {
-   "id": "emp-vibe01",
-   "from": "emp",
-   "to": "vibe01",
-   "variant": "default",
-   "fromSide": "left",
-   "toSide": "right"
-  },
-  {
-   "id": "vibe01-emp",
-   "from": "vibe01",
-   "to": "emp",
+   "to": "outvibe01",
    "variant": "emphasis",
    "fromSide": "right",
    "toSide": "left"
   },
   {
-   "id": "cand-vibe02",
-   "from": "cand",
+   "id": "p-vibe01",
+   "from": "outvibe01",
+   "to": "profile",
+   "variant": "emphasis"
+  },
+  {
+   "id": "i-vibe02",
+   "from": "invibe02",
    "to": "vibe02",
    "variant": "default",
    "fromSide": "right",
    "toSide": "left"
   },
   {
-   "id": "vibe02-cand",
+   "id": "o-vibe02",
    "from": "vibe02",
-   "to": "cand",
-   "variant": "emphasis",
-   "fromSide": "left",
-   "toSide": "right"
-  },
-  {
-   "id": "emp-vibe02",
-   "from": "emp",
-   "to": "vibe02",
-   "variant": "default",
-   "fromSide": "left",
-   "toSide": "right"
-  },
-  {
-   "id": "vibe02-emp",
-   "from": "vibe02",
-   "to": "emp",
+   "to": "outvibe02",
    "variant": "emphasis",
    "fromSide": "right",
    "toSide": "left"
   },
   {
-   "id": "cand-vibe03",
-   "from": "cand",
+   "id": "p-vibe02",
+   "from": "outvibe02",
+   "to": "profile",
+   "variant": "emphasis"
+  },
+  {
+   "id": "i-vibe03",
+   "from": "invibe03",
    "to": "vibe03",
    "variant": "default",
    "fromSide": "right",
    "toSide": "left"
   },
   {
-   "id": "vibe03-cand",
+   "id": "o-vibe03",
    "from": "vibe03",
-   "to": "cand",
-   "variant": "emphasis",
-   "fromSide": "left",
-   "toSide": "right"
-  },
-  {
-   "id": "emp-vibe03",
-   "from": "emp",
-   "to": "vibe03",
-   "variant": "default",
-   "fromSide": "left",
-   "toSide": "right"
-  },
-  {
-   "id": "vibe03-emp",
-   "from": "vibe03",
-   "to": "emp",
+   "to": "outvibe03",
    "variant": "emphasis",
    "fromSide": "right",
    "toSide": "left"
   },
   {
-   "id": "cand-vibe04",
-   "from": "cand",
+   "id": "p-vibe03",
+   "from": "outvibe03",
+   "to": "profile",
+   "variant": "emphasis"
+  },
+  {
+   "id": "i-vibe04",
+   "from": "invibe04",
    "to": "vibe04",
    "variant": "default",
    "fromSide": "right",
    "toSide": "left"
   },
   {
-   "id": "vibe04-cand",
+   "id": "o-vibe04",
    "from": "vibe04",
-   "to": "cand",
-   "variant": "emphasis",
-   "fromSide": "left",
-   "toSide": "right"
-  },
-  {
-   "id": "emp-vibe04",
-   "from": "emp",
-   "to": "vibe04",
-   "variant": "default",
-   "fromSide": "left",
-   "toSide": "right"
-  },
-  {
-   "id": "vibe04-emp",
-   "from": "vibe04",
-   "to": "emp",
+   "to": "outvibe04",
    "variant": "emphasis",
    "fromSide": "right",
    "toSide": "left"
   },
   {
-   "id": "cand-vibe05",
+   "id": "p-vibe04",
+   "from": "outvibe04",
+   "to": "profile",
+   "variant": "emphasis"
+  },
+  {
+   "id": "i-vibe05",
+   "from": "invibe05",
+   "to": "vibe05",
+   "variant": "default",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  {
+   "id": "o-vibe05",
+   "from": "vibe05",
+   "to": "outvibe05",
+   "variant": "emphasis",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  {
+   "id": "p-vibe05",
+   "from": "outvibe05",
+   "to": "profile",
+   "variant": "emphasis"
+  },
+  {
+   "id": "pr-recr",
+   "from": "profile",
+   "to": "recr",
+   "label": "кандидата",
+   "variant": "dashed"
+  },
+  {
+   "id": "pr-waibo",
+   "from": "profile",
+   "to": "waibo",
+   "label": "кандидата и сотрудника",
+   "variant": "dashed"
+  },
+  {
+   "id": "pr-team",
+   "from": "profile",
+   "to": "team",
+   "label": "сотрудника",
+   "variant": "dashed"
+  },
+  {
+   "id": "pr-aibot",
+   "from": "profile",
+   "to": "aibot",
+   "label": "сотрудника",
+   "variant": "dashed"
+  },
+  {
+   "id": "cand-invibe01",
    "from": "cand",
-   "to": "vibe05",
-   "variant": "default",
-   "fromSide": "right",
-   "toSide": "left"
+   "to": "invibe01",
+   "variant": "default"
   },
   {
-   "id": "vibe05-cand",
-   "from": "vibe05",
-   "to": "cand",
-   "variant": "emphasis",
-   "fromSide": "left",
-   "toSide": "right"
-  },
-  {
-   "id": "emp-vibe05",
+   "id": "emp-invibe01",
    "from": "emp",
-   "to": "vibe05",
-   "variant": "default",
-   "fromSide": "left",
-   "toSide": "right"
+   "to": "invibe01",
+   "variant": "default"
   },
   {
-   "id": "vibe05-emp",
-   "from": "vibe05",
-   "to": "emp",
-   "variant": "emphasis",
-   "fromSide": "right",
-   "toSide": "left"
+   "id": "cand-invibe02",
+   "from": "cand",
+   "to": "invibe02",
+   "variant": "default"
   },
   {
-   "id": "v5-recr01",
-   "from": "vibe05",
-   "to": "recr01",
-   "label": "сравнение с вакансией",
-   "variant": "dashed",
-   "fromSide": "bottom",
-   "toSide": "top"
+   "id": "emp-invibe02",
+   "from": "emp",
+   "to": "invibe02",
+   "variant": "default"
   },
   {
-   "id": "v5-team01",
-   "from": "vibe05",
-   "to": "team01",
-   "label": "сравнение с культурным кодом",
-   "variant": "dashed",
-   "fromSide": "bottom",
-   "toSide": "top"
+   "id": "cand-invibe03",
+   "from": "cand",
+   "to": "invibe03",
+   "variant": "default"
+  },
+  {
+   "id": "emp-invibe03",
+   "from": "emp",
+   "to": "invibe03",
+   "variant": "default"
+  },
+  {
+   "id": "cand-invibe04",
+   "from": "cand",
+   "to": "invibe04",
+   "variant": "default"
+  },
+  {
+   "id": "emp-invibe04",
+   "from": "emp",
+   "to": "invibe04",
+   "variant": "default"
   }
  ],
  "cards": [
   {
    "dot": "amber",
-   "title": "Стрелки людей",
+   "title": "Стрелки",
    "items": [
-    "Серая: вход, ответы и подтверждение результата",
-    "Зелёная: выход, результат продукта человеку",
-    "Фиолетовая пунктирная: передача в другое направление",
-    "Подтверждение результата каждого продукта: порог 97%"
+    "Серая: вход",
+    "Зелёная: выход",
+    "Фиолетовая пунктирная: передача в другое направление"
    ]
   },
   {
    "dot": "cyan",
-   "title": "Выходы в другие направления",
+   "title": "Кому уходит профиль",
    "items": [
-    "VIBE-05: сравнение с вакансией (RECR-01) и с культурным кодом команды (TEAM-01)",
-    "Профиль вайба из VIBE-01…04 идёт в мэтч RECR-02, на схеме не показан"
+    "Кандидат: RECR (мэтч) и WAIBO",
+    "Сотрудник: WAIBO, TEAM и AIBOT",
+    "Вход VIBE-05: результаты VIBE-01…04 (выходы выше)"
    ]
   }
  ]
