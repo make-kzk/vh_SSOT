@@ -3,7 +3,7 @@
  "diagram_type": "architecture",
  "meta": {
   "title": "RECR: продукты найма и люди",
-  "output": ".archify/architecture-recr-20261005-110000/recr.html",
+  "output": ".archify/architecture-recr-20261005-120000/best/recr.html",
   "quality_profile": "showcase",
   "legend": {
    "mode": "auto",
@@ -154,7 +154,7 @@
    "sublabel": "найм",
    "pos": [
     320,
-    80
+    120
    ],
    "size": [
     150,
@@ -167,8 +167,8 @@
    "label": "Нанимающий менеджер",
    "sublabel": "руководитель команды",
    "pos": [
-    1040,
-    80
+    740,
+    160
    ],
    "size": [
     190,
@@ -181,8 +181,8 @@
    "label": "Директор",
    "sublabel": "директор подразделения",
    "pos": [
-    840,
-    40
+    80,
+    120
    ],
    "size": [
     170,
@@ -196,7 +196,7 @@
    "sublabel": "получает оффер",
    "pos": [
     620,
-    80
+    40
    ],
    "size": [
     150,
@@ -223,8 +223,8 @@
    "label": "TEAM-01",
    "sublabel": "культурный код команды",
    "pos": [
-    20,
-    540
+    80,
+    600
    ],
    "size": [
     170,
@@ -237,8 +237,8 @@
    "label": "VIBE",
    "sublabel": "профиль вайба",
    "pos": [
-    320,
-    600
+    800,
+    540
    ],
    "size": [
     150,
@@ -353,7 +353,7 @@
    "from": "recruiter",
    "to": "r3",
    "variant": "default",
-   "label": "оценка интервью"
+   "label": "оценка и решение"
   },
   {
    "id": "r3-rec",
@@ -363,18 +363,11 @@
    "label": "бланк"
   },
   {
-   "id": "r6-rec",
-   "from": "r6",
-   "to": "recruiter",
-   "variant": "emphasis",
-   "label": "итоговое решение"
-  },
-  {
    "id": "man-r4",
    "from": "manager",
    "to": "r4",
    "variant": "default",
-   "label": "оценки по своему бланку"
+   "label": "оценки по бланку, решение"
   },
   {
    "id": "man-r7",
@@ -416,7 +409,7 @@
    "from": "director",
    "to": "r6",
    "variant": "default",
-   "label": "интервью и оценка"
+   "label": "оценка и решение"
   },
   {
    "id": "cand-r5",
@@ -452,6 +445,13 @@
    "to": "r9",
    "variant": "default",
    "label": "информация 7-90 дней"
+  },
+  {
+   "id": "man-r5",
+   "from": "manager",
+   "to": "r5",
+   "variant": "default",
+   "label": "решение по заданию"
   }
  ],
  "cards": [
