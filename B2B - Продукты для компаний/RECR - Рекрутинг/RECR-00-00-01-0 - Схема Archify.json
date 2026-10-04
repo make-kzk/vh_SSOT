@@ -3,7 +3,7 @@
  "diagram_type": "architecture",
  "meta": {
   "title": "RECR: продукты найма и люди",
-  "output": ".archify/architecture-recr-20261004-290000/recr.html",
+  "output": ".archify/architecture-recr-20261005-100000/recr.html",
   "quality_profile": "showcase",
   "legend": {
    "mode": "auto",
@@ -27,11 +27,11 @@
    "label": "RECR-01",
    "sublabel": "вакансия",
    "pos": [
-    40,
-    300
+    20,
+    330
    ],
    "size": [
-    150,
+    118,
     60
    ]
   },
@@ -41,11 +41,11 @@
    "label": "RECR-02",
    "sublabel": "подбор",
    "pos": [
-    240,
-    300
+    166,
+    330
    ],
    "size": [
-    150,
+    118,
     60
    ]
   },
@@ -53,13 +53,13 @@
    "id": "r3",
    "type": "backend",
    "label": "RECR-03",
-   "sublabel": "интервью",
+   "sublabel": "интервью рекрутёра",
    "pos": [
-    440,
-    300
+    312,
+    330
    ],
    "size": [
-    150,
+    118,
     60
    ]
   },
@@ -67,13 +67,13 @@
    "id": "r4",
    "type": "backend",
    "label": "RECR-04",
-   "sublabel": "прогноз",
+   "sublabel": "интервью менеджера",
    "pos": [
-    640,
-    300
+    458,
+    330
    ],
    "size": [
-    150,
+    118,
     60
    ]
   },
@@ -81,13 +81,13 @@
    "id": "r5",
    "type": "backend",
    "label": "RECR-05",
-   "sublabel": "оффер",
+   "sublabel": "тестовое задание",
    "pos": [
-    840,
-    300
+    604,
+    330
    ],
    "size": [
-    150,
+    118,
     60
    ]
   },
@@ -95,13 +95,55 @@
    "id": "r6",
    "type": "backend",
    "label": "RECR-06",
-   "sublabel": "адаптация",
+   "sublabel": "интервью директора",
    "pos": [
-    1040,
-    300
+    750,
+    330
    ],
    "size": [
-    150,
+    118,
+    60
+   ]
+  },
+  {
+   "id": "r7",
+   "type": "backend",
+   "label": "RECR-07",
+   "sublabel": "прогноз",
+   "pos": [
+    896,
+    330
+   ],
+   "size": [
+    118,
+    60
+   ]
+  },
+  {
+   "id": "r8",
+   "type": "backend",
+   "label": "RECR-08",
+   "sublabel": "оффер",
+   "pos": [
+    1042,
+    330
+   ],
+   "size": [
+    118,
+    60
+   ]
+  },
+  {
+   "id": "r9",
+   "type": "backend",
+   "label": "RECR-09",
+   "sublabel": "адаптация",
+   "pos": [
+    1188,
+    330
+   ],
+   "size": [
+    118,
     60
    ]
   },
@@ -111,8 +153,8 @@
    "label": "Рекрутёр",
    "sublabel": "найм",
    "pos": [
-    440,
-    120
+    320,
+    80
    ],
    "size": [
     150,
@@ -125,11 +167,25 @@
    "label": "Нанимающий менеджер",
    "sublabel": "руководитель команды",
    "pos": [
-    640,
-    40
+    1040,
+    80
    ],
    "size": [
     190,
+    60
+   ]
+  },
+  {
+   "id": "director",
+   "type": "external",
+   "label": "Директор",
+   "sublabel": "интервью",
+   "pos": [
+    860,
+    40
+   ],
+   "size": [
+    150,
     60
    ]
   },
@@ -139,36 +195,8 @@
    "label": "Кандидат",
    "sublabel": "получает оффер",
    "pos": [
-    140,
-    120
-   ],
-   "size": [
-    150,
-    60
-   ]
-  },
-  {
-   "id": "team01",
-   "type": "backend",
-   "label": "TEAM-01",
-   "sublabel": "культурный код команды",
-   "pos": [
-    40,
-    560
-   ],
-   "size": [
-    170,
-    60
-   ]
-  },
-  {
-   "id": "vibe",
-   "type": "cloud",
-   "label": "VIBE",
-   "sublabel": "профиль вайба",
-   "pos": [
-    440,
-    560
+    620,
+    80
    ],
    "size": [
     150,
@@ -181,8 +209,36 @@
    "label": "Сотрудник",
    "sublabel": "специалист в найме",
    "pos": [
-    1300,
-    440
+    1160,
+    600
+   ],
+   "size": [
+    150,
+    60
+   ]
+  },
+  {
+   "id": "team01",
+   "type": "backend",
+   "label": "TEAM-01",
+   "sublabel": "культурный код команды",
+   "pos": [
+    20,
+    540
+   ],
+   "size": [
+    170,
+    60
+   ]
+  },
+  {
+   "id": "vibe",
+   "type": "cloud",
+   "label": "VIBE",
+   "sublabel": "профиль вайба",
+   "pos": [
+    320,
+    600
    ],
    "size": [
     150,
@@ -222,6 +278,24 @@
    "variant": "dashed"
   },
   {
+   "id": "o5",
+   "from": "r6",
+   "to": "r7",
+   "variant": "dashed"
+  },
+  {
+   "id": "o6",
+   "from": "r7",
+   "to": "r8",
+   "variant": "dashed"
+  },
+  {
+   "id": "o7",
+   "from": "r8",
+   "to": "r9",
+   "variant": "dashed"
+  },
+  {
    "id": "t1",
    "from": "team01",
    "to": "r1",
@@ -235,9 +309,9 @@
    "variant": "dashed"
   },
   {
-   "id": "t4",
+   "id": "t7",
    "from": "team01",
-   "to": "r4",
+   "to": "r7",
    "variant": "dashed"
   },
   {
@@ -248,10 +322,17 @@
    "label": "профиль вайба"
   },
   {
-   "id": "v4",
+   "id": "v7",
    "from": "vibe",
-   "to": "r4",
+   "to": "r7",
    "variant": "dashed"
+  },
+  {
+   "id": "o17",
+   "from": "r1",
+   "to": "r7",
+   "variant": "dashed",
+   "label": "профиль вакансии"
   },
   {
    "id": "rec-r1",
@@ -272,60 +353,81 @@
    "from": "recruiter",
    "to": "r3",
    "variant": "default",
-   "label": "оценка интервью, решение"
+   "label": "оценка интервью"
   },
   {
    "id": "r3-rec",
    "from": "r3",
    "to": "recruiter",
    "variant": "emphasis",
-   "label": "бланк, итоговое решение"
+   "label": "бланк"
+  },
+  {
+   "id": "r6-rec",
+   "from": "r6",
+   "to": "recruiter",
+   "variant": "emphasis",
+   "label": "итоговое решение"
   },
   {
    "id": "man-r4",
    "from": "manager",
    "to": "r4",
    "variant": "default",
+   "label": "оценки по своему бланку"
+  },
+  {
+   "id": "man-r7",
+   "from": "manager",
+   "to": "r7",
+   "variant": "default",
    "label": "точность отчёта"
   },
   {
-   "id": "r4-man",
-   "from": "r4",
+   "id": "r7-man",
+   "from": "r7",
    "to": "manager",
    "variant": "emphasis",
    "label": "отчёт о прогнозе"
   },
   {
-   "id": "man-r6",
+   "id": "man-r8",
    "from": "manager",
-   "to": "r6",
+   "to": "r8",
+   "variant": "default",
+   "label": "утверждение условий"
+  },
+  {
+   "id": "man-r9",
+   "from": "manager",
+   "to": "r9",
    "variant": "default",
    "label": "оценки 7-90 дней"
   },
   {
-   "id": "r6-man",
-   "from": "r6",
+   "id": "r9-man",
+   "from": "r9",
    "to": "manager",
    "variant": "emphasis",
    "label": "план адаптации"
   },
   {
-   "id": "o14",
-   "from": "r1",
-   "to": "r4",
-   "variant": "dashed",
-   "label": "профиль вакансии"
+   "id": "dir-r6",
+   "from": "director",
+   "to": "r6",
+   "variant": "default",
+   "label": "интервью и оценка"
   },
   {
-   "id": "man-r5",
-   "from": "manager",
+   "id": "cand-r5",
+   "from": "candidate",
    "to": "r5",
    "variant": "default",
-   "label": "утверждение условий"
+   "label": "выполненное задание"
   },
   {
-   "id": "r5-rec",
-   "from": "r5",
+   "id": "r8-rec",
+   "from": "r8",
    "to": "recruiter",
    "variant": "emphasis",
    "label": "оффер для отправки"
@@ -338,25 +440,18 @@
    "label": "оффер через чат-бот"
   },
   {
-   "id": "emp-r6",
-   "from": "employee",
-   "to": "r6",
-   "variant": "default",
-   "label": "информация 7-90 дней"
-  },
-  {
    "id": "cand-rec",
    "from": "candidate",
    "to": "recruiter",
    "variant": "default",
-   "label": "ответы и правки условий через чат-бот"
+   "label": "ответы и правки через чат-бот"
   },
   {
-   "id": "man-r3",
-   "from": "manager",
-   "to": "r3",
+   "id": "emp-r9",
+   "from": "employee",
+   "to": "r9",
    "variant": "default",
-   "label": "интервью с менеджером"
+   "label": "информация 7-90 дней"
   }
  ],
  "cards": [
@@ -373,8 +468,9 @@
    "dot": "cyan",
    "title": "Порядок найма",
    "items": [
-    "RECR-01 вакансия, RECR-02 подбор, RECR-03 интервью",
-    "RECR-04 прогноз перед оффером, RECR-05 оффер, RECR-06 адаптация"
+    "RECR-01 вакансия, RECR-02 подбор",
+    "RECR-03 интервью рекрутёра, RECR-04 менеджера, RECR-05 тестовое задание, RECR-06 директора",
+    "RECR-07 прогноз перед оффером, RECR-08 оффер, RECR-09 адаптация"
    ]
   }
  ]
