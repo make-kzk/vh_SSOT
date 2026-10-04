@@ -3,7 +3,7 @@
  "diagram_type": "architecture",
  "meta": {
   "title": "RECR: продукты найма и люди",
-  "output": ".archify/architecture-recr-20261004-250000/best/recr.html",
+  "output": ".archify/architecture-recr-20261004-260000/recr.html",
   "quality_profile": "showcase",
   "legend": {
    "mode": "auto",
@@ -286,7 +286,7 @@
    "from": "manager",
    "to": "r6",
    "variant": "default",
-   "label": "оценки 7, 14, 28 дней"
+   "label": "оценки 7-90 дней"
   },
   {
    "id": "r6-man",

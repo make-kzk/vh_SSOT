@@ -3,7 +3,7 @@
  "diagram_type": "architecture",
  "meta": {
   "title": "VibeHunt: пять направлений и роли",
-  "output": ".archify/architecture-totl-20261004-230000/totl.html",
+  "output": ".archify/architecture-totl-20261004-260000/totl.html",
   "quality_profile": "showcase",
   "legend": {
    "mode": "auto",
@@ -183,7 +183,7 @@
    "id": "manager-in",
    "from": "manager",
    "to": "recr",
-   "label": "точность отчёта, оценки 7/14/28",
+   "label": "точность отчёта, оценки 7-90 дней",
    "variant": "default"
   },
   {
