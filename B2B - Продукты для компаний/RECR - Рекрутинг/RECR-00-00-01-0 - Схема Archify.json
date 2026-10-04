@@ -3,7 +3,7 @@
  "diagram_type": "architecture",
  "meta": {
   "title": "RECR: продукты найма и люди",
-  "output": ".archify/architecture-recr-20261004-220000/recr.html",
+  "output": ".archify/architecture-recr-20261004-250000/best/recr.html",
   "quality_profile": "showcase",
   "legend": {
    "mode": "auto",
@@ -111,8 +111,8 @@
    "label": "Рекрутёр",
    "sublabel": "найм",
    "pos": [
-    100,
-    60
+    440,
+    120
    ],
    "size": [
     150,
@@ -139,8 +139,8 @@
    "label": "Кандидат",
    "sublabel": "получает оффер",
    "pos": [
-    840,
-    560
+    140,
+    120
    ],
    "size": [
     150,
@@ -296,18 +296,32 @@
    "label": "план адаптации"
   },
   {
-   "id": "r5-cand",
-   "from": "r5",
-   "to": "candidate",
-   "variant": "emphasis",
-   "label": "оффер"
-  },
-  {
    "id": "o14",
    "from": "r1",
    "to": "r4",
    "variant": "dashed",
    "label": "профиль вакансии"
+  },
+  {
+   "id": "man-r5",
+   "from": "manager",
+   "to": "r5",
+   "variant": "default",
+   "label": "утверждение условий"
+  },
+  {
+   "id": "r5-rec",
+   "from": "r5",
+   "to": "recruiter",
+   "variant": "emphasis",
+   "label": "оффер для отправки"
+  },
+  {
+   "id": "rec-cand",
+   "from": "recruiter",
+   "to": "candidate",
+   "variant": "emphasis",
+   "label": "оффер"
   }
  ],
  "cards": [
