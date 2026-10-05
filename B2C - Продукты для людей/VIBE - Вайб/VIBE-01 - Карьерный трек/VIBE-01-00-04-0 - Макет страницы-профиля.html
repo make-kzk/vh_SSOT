@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VIBE-01: макет страницы-профиля</title>
+<style>
+:root{
+  --bg:#f5f6f8; --card:#ffffff; --ink:#1b1f27; --muted:#667085; --line:#e4e7ec;
+  --accent:#0f766e; --accent-soft:#d9f2ee; --warn:#b54708; --warn-soft:#fff4e5; --bar:#cfd6e0;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f1318; --card:#171c23; --ink:#e8ecf2; --muted:#98a2b3; --line:#2a313b;
+    --accent:#4fd1c5; --accent-soft:#12332f; --warn:#f6ad55; --warn-soft:#33260f; --bar:#2c3541;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f1318; --card:#171c23; --ink:#e8ecf2; --muted:#98a2b3; --line:#2a313b;
+  --accent:#4fd1c5; --accent-soft:#12332f; --warn:#f6ad55; --warn-soft:#33260f; --bar:#2c3541;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:24px 16px 56px}
+.note{background:var(--warn-soft);color:var(--warn);border:1px solid var(--line);border-radius:10px;padding:10px 14px;font-size:13px;margin-bottom:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:16px}
+h1{font-size:24px;margin:0 0 4px}
+h2{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 12px}
+.sub{color:var(--muted);margin:0}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.badge{background:var(--accent-soft);color:var(--accent);border-radius:999px;padding:3px 12px;font-size:13px;font-weight:600}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{border:1px solid var(--line);border-radius:8px;padding:2px 10px;font-size:13px}
+.row{display:grid;grid-template-columns:170px 1fr 36px;gap:10px;align-items:center;margin:8px 0}
+.bar{height:10px;background:var(--bar);border-radius:6px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent)}
+.lvl{font-weight:700;text-align:right}
+.ach{margin:0;padding-left:18px}
+.ach li{margin:8px 0}
+.ach b{color:var(--accent)}
+.cases{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.case{border:1px solid var(--line);border-radius:10px;padding:12px;font-size:14px}
+.case h3{margin:0 0 6px;font-size:15px}
+.case dt{font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+.case dd{margin:0}
+.foot{color:var(--muted);font-size:13px}
+.open{background:var(--warn-soft);border:1px dashed var(--warn);border-radius:12px;padding:14px 18px}
+.open h2{color:var(--warn)}
+.open li{margin:6px 0}
+@media (max-width:560px){.row{grid-template-columns:1fr 36px}.row .name{grid-column:1/-1}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="note">Макет к VIBE-01. Данные вымышленные. Так выглядит страница по публичной ссылке (шаг 5, выход продукта). Оценки Big Five и Hogan на странице не показываются.</div>
+
+<div class="card">
+  <h1>Анна К.</h1>
+  <p class="sub">HR-методолог, управленческий трек</p>
+  <div class="badges">
+    <span class="badge">M-Track</span>
+    <span class="badge">Международные корпорации и банки</span>
+    <span class="badge">Опыт 14 лет</span>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Краткая сводка</h2>
+  <p style="margin:0 0 12px">Строит системы оценки и развития персонала в крупных организациях: модели компетенций, кадровый резерв, центры оценки. Переводит HR-методологию в понятные процессы и продукты.</p>
+  <div style="margin-bottom:10px"><div class="foot" style="margin-bottom:4px">Ключевые навыки</div>
+    <div class="tags"><span class="tag">Модели компетенций</span><span class="tag">Кадровый резерв</span><span class="tag">Центры оценки</span><span class="tag">Карьерные треки</span><span class="tag">Адаптация</span></div></div>
+  <div><div class="foot" style="margin-bottom:4px">Стек</div>
+    <div class="tags"><span class="tag">LMS</span><span class="tag">HCM</span><span class="tag">Power BI</span><span class="tag">Notion</span></div></div>
+</div>
+
+<div class="card">
+  <h2>Реестр достижений</h2>
+  <ol class="ach">
+    <li><b>Внедрила</b> центр оценки для кадрового резерва: <b>2 кампании</b>, 120 человек, инструмент: Assessment Center.</li>
+    <li><b>Сократила</b> срок закрытия вакансий с 62 до 41 дня за 6 месяцев, инструмент: ATS.</li>
+    <li><b>Запустила</b> адаптацию для новичков в 14 филиалах, текучесть первого года <b>снизилась с 28% до 19%</b>.</li>
+    <li><b>Разработала</b> модели компетенций для <b>40 должностей</b>, инструмент: профили ролей в LMS.</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>Сильные места по T-Track</h2>
+  <div class="row"><span class="name">Craft Mastery</span><div class="bar"><i style="width:83%"></i></div><span class="lvl">5</span></div>
+  <div class="row"><span class="name">Team Leadership</span><div class="bar"><i style="width:67%"></i></div><span class="lvl">4</span></div>
+  <div class="row"><span class="name">Processes &amp; Delivery</span><div class="bar"><i style="width:83%"></i></div><span class="lvl">5</span></div>
+  <div class="row"><span class="name">Business &amp; P&amp;L</span><div class="bar"><i style="width:50%"></i></div><span class="lvl">3</span></div>
+  <div class="row"><span class="name">Strategy &amp; Vision</span><div class="bar"><i style="width:67%"></i></div><span class="lvl">4</span></div>
+  <p class="foot" style="margin:12px 0 0">Шкала 0-6. Сильнее всего: Craft Mastery и Processes &amp; Delivery (уровень 5, эксперт). Оценку поставила система по фактам, ответам и кейсам, человек подтвердил.</p>
+</div>
+
+<div class="card">
+  <h2>Кейсы</h2>
+  <div class="cases">
+    <div class="case"><h3>Кадровый резерв на ключевые роли</h3><dl>
+      <dt>Ситуация</dt><dd>Нет преемников на ключевые должности.</dd>
+      <dt>Задача</dt><dd>Создать резерв и процедуру отбора.</dd>
+      <dt>Действия</dt><dd>Внедрила центр оценки, критерии и план развития.</dd>
+      <dt>Результат</dt><dd>Готовность преемников 55% → 82% за год.</dd></dl></div>
+    <div class="case"><h3>Адаптация новичков</h3><dl>
+      <dt>Ситуация</dt><dd>Высокая текучесть в первый год.</dd>
+      <dt>Задача</dt><dd>Единый процесс адаптации.</dd>
+      <dt>Действия</dt><dd>План на 90 дней, наставники, замеры на 7, 30, 90 день.</dd>
+      <dt>Результат</dt><dd>Текучесть первого года 28% → 19%.</dd></dl></div>
+    <div class="case"><h3>Модели компетенций</h3><dl>
+      <dt>Ситуация</dt><dd>Нет единых профилей должностей.</dd>
+      <dt>Задача</dt><dd>Описать роли для подбора и оценки.</dd>
+      <dt>Действия</dt><dd>Интервью с руководителями, профили на 40 ролей.</dd>
+      <dt>Результат</dt><dd>Профили используются в подборе и оценке.</dd></dl></div>
+  </div>
+  <p class="foot" style="margin:12px 0 0">Раздел показывается, если человек заполнил шаг 4. Шаг можно пропустить, тогда раздела на странице нет.</p>
+</div>
+
+<p class="foot">Профиль подтверждён человеком 05.10.2026. Ссылка: vibehunt.example/p/anna-k-3f9a (публичная).</p>
+
+<div class="open">
+  <h2>Открытое: нужно решить</h2>
+  <ol>
+    <li><b>Что видно по публичной ссылке.</b> Имя, инициал, фото, контакты, ожидания по условиям.</li>
+    <li><b>Правила ссылки.</b> Отзыв, срок жизни, кто может открыть (все или только по ссылке).</li>
+    <li><b>Состав карточки (шаг 1).</b> Какие поля собираем и какие из них попадают на страницу.</li>
+    <li><b>Вопросы T-Track «о себе».</b> Как сформулировать пять вопросов для человека.</li>
+    <li><b>Источники резюме.</b> Только файл или ещё импорт (например, с HeadHunter).</li>
+  </ol>
+</div>
+
+</div>
+</body>
+</html>
