@@ -4,7 +4,7 @@
  "meta": {
   "title": "VIBE-01: карьерный трек, от резюме до страницы-профиля",
   "quality_profile": "showcase",
-  "output": ".archify/workflow-vibe01-20261005-170000/best/vibe01.html",
+  "output": ".archify/workflow-vibe01-20261005-180000/best/vibe01.html",
   "legend": {
    "mode": "auto",
    "entries": {
@@ -43,8 +43,8 @@
   "resume",
   "digit",
   "audit",
-  "cases",
   "ttrack",
+  "cases",
   "grade",
   "confirm",
   "profile"
@@ -80,18 +80,18 @@
   {
    "id": "cases",
    "lane": "human",
-   "col": 3,
+   "col": 4,
    "type": "cloud",
-   "label": "3 Кейсы",
-   "sublabel": "3-5, чат-бот уточняет",
+   "label": "4 Кейсы",
+   "sublabel": "форма на сайте, можно пропустить",
    "width": 172
   },
   {
    "id": "ttrack",
    "lane": "human",
-   "col": 4,
+   "col": 3,
    "type": "cloud",
-   "label": "4 Ответы T-Track",
+   "label": "3 Ответы T-Track",
    "sublabel": "5 вопросов, уровень 0-6",
    "width": 172
   },
@@ -148,18 +148,18 @@
   {
    "id": "e3",
    "from": "audit",
-   "to": "cases",
-   "variant": "emphasis"
-  },
-  {
-   "id": "e4",
-   "from": "cases",
    "to": "ttrack",
    "variant": "emphasis"
   },
   {
-   "id": "e5",
+   "id": "e4",
    "from": "ttrack",
+   "to": "cases",
+   "variant": "emphasis"
+  },
+  {
+   "id": "e5",
+   "from": "cases",
    "to": "grade",
    "variant": "emphasis"
   },
@@ -188,9 +188,9 @@
    "dot": "cyan",
    "title": "Что в продукте",
    "items": [
-    "Вход: резюме и кейсы, ответы на вопросы T-Track",
+    "Вход: резюме, ответы на вопросы T-Track, кейсы (шаг можно пропустить)",
     "Выход: страница-профиль по публичной ссылке (сводка, реестр достижений, T-Track, кейсы)",
-    "Пример результата: ARFT-01, аналитический отчёт по кандидату №3"
+    "Пример результата: ARFT-01, исторический образец (аналитический отчёт по кандидату №3)"
    ]
   },
   {
