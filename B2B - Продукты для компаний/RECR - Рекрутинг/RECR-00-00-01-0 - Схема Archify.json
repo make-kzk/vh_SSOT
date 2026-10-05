@@ -3,7 +3,7 @@
  "diagram_type": "architecture",
  "meta": {
   "title": "RECR: продукты найма и люди",
-  "output": ".archify/architecture-recr-20261005-140000/best/recr.html",
+  "output": ".archify/architecture-recr-20261005-150000/best/recr.html",
   "quality_profile": "showcase",
   "legend": {
    "mode": "auto",
@@ -294,13 +294,6 @@
    "from": "r8",
    "to": "r9",
    "variant": "dashed"
-  },
-  {
-   "id": "t1",
-   "from": "team01",
-   "to": "r1",
-   "variant": "dashed",
-   "label": "код команды"
   },
   {
    "id": "t2",
