@@ -1,0 +1,206 @@
+{
+ "schema_version": 2,
+ "diagram_type": "workflow",
+ "meta": {
+  "title": "VIBE-01: карьерный трек, от резюме до страницы-профиля",
+  "quality_profile": "showcase",
+  "output": ".archify/workflow-vibe01-20261005-170000/best/vibe01.html",
+  "legend": {
+   "mode": "auto",
+   "entries": {
+    "cloud": {
+     "label": "Человек"
+    },
+    "backend": {
+     "label": "Система"
+    },
+    "security": {
+     "label": "Скрытая оценка"
+    }
+   }
+  }
+ },
+ "lanes": [
+  {
+   "id": "human",
+   "label": "Человек"
+  },
+  {
+   "id": "system",
+   "label": "Система"
+  },
+  {
+   "id": "result",
+   "label": "Результат"
+  },
+  {
+   "id": "hidden",
+   "label": "Скрытая оценка",
+   "variant": "exception"
+  }
+ ],
+ "mainPath": [
+  "resume",
+  "digit",
+  "audit",
+  "cases",
+  "ttrack",
+  "grade",
+  "confirm",
+  "profile"
+ ],
+ "nodes": [
+  {
+   "id": "resume",
+   "lane": "human",
+   "col": 0,
+   "type": "cloud",
+   "label": "Резюме",
+   "sublabel": "файл PDF или DOCX",
+   "width": 172
+  },
+  {
+   "id": "digit",
+   "lane": "system",
+   "col": 1,
+   "type": "backend",
+   "label": "1 Оцифровка",
+   "sublabel": "карточка человека",
+   "width": 172
+  },
+  {
+   "id": "audit",
+   "lane": "system",
+   "col": 2,
+   "type": "backend",
+   "label": "2 Аудит опыта",
+   "sublabel": "реестр твёрдых фактов",
+   "width": 172
+  },
+  {
+   "id": "cases",
+   "lane": "human",
+   "col": 3,
+   "type": "cloud",
+   "label": "3 Кейсы",
+   "sublabel": "3-5, чат-бот уточняет",
+   "width": 172
+  },
+  {
+   "id": "ttrack",
+   "lane": "human",
+   "col": 4,
+   "type": "cloud",
+   "label": "4 Ответы T-Track",
+   "sublabel": "5 вопросов, уровень 0-6",
+   "width": 172
+  },
+  {
+   "id": "grade",
+   "lane": "system",
+   "col": 5,
+   "type": "backend",
+   "label": "5 Грейдинг",
+   "sublabel": "трек, T-Track, навыки, стек",
+   "width": 172
+  },
+  {
+   "id": "confirm",
+   "lane": "human",
+   "col": 5,
+   "type": "cloud",
+   "label": "Подтверждение",
+   "sublabel": "человек подтверждает или правит",
+   "width": 172
+  },
+  {
+   "id": "profile",
+   "lane": "result",
+   "col": 5,
+   "type": "backend",
+   "label": "Страница-профиль",
+   "sublabel": "публичная ссылка",
+   "width": 172
+  },
+  {
+   "id": "bigfive",
+   "lane": "hidden",
+   "col": 5,
+   "type": "security",
+   "label": "6 Big Five и Hogan",
+   "sublabel": "общая оценка после VIBE-05",
+   "width": 172
+  }
+ ],
+ "edges": [
+  {
+   "id": "e1",
+   "from": "resume",
+   "to": "digit",
+   "variant": "emphasis"
+  },
+  {
+   "id": "e2",
+   "from": "digit",
+   "to": "audit",
+   "variant": "emphasis"
+  },
+  {
+   "id": "e3",
+   "from": "audit",
+   "to": "cases",
+   "variant": "emphasis"
+  },
+  {
+   "id": "e4",
+   "from": "cases",
+   "to": "ttrack",
+   "variant": "emphasis"
+  },
+  {
+   "id": "e5",
+   "from": "ttrack",
+   "to": "grade",
+   "variant": "emphasis"
+  },
+  {
+   "id": "e6",
+   "from": "grade",
+   "to": "confirm",
+   "variant": "emphasis"
+  },
+  {
+   "id": "e7",
+   "from": "confirm",
+   "to": "profile",
+   "variant": "emphasis"
+  },
+  {
+   "id": "h1",
+   "from": "grade",
+   "to": "bigfive",
+   "variant": "security",
+   "role": "branch"
+  }
+ ],
+ "cards": [
+  {
+   "dot": "cyan",
+   "title": "Что в продукте",
+   "items": [
+    "Вход: резюме и кейсы, ответы на вопросы T-Track",
+    "Выход: страница-профиль по публичной ссылке (сводка, реестр достижений, T-Track, кейсы)",
+    "Пример результата: ARFT-01, аналитический отчёт по кандидату №3"
+   ]
+  },
+  {
+   "dot": "amber",
+   "title": "Скрытая оценка",
+   "items": [
+    "Оценки по Big Five и Hogan ставятся после каждого этапа VIBE-01…05",
+    "Никому не показываются",
+    "После VIBE-05 собираются в общее значение"
+   ]
+  }
+ ]
+}
