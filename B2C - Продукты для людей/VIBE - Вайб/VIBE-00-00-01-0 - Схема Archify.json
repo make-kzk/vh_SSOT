@@ -3,7 +3,7 @@
  "diagram_type": "architecture",
  "meta": {
   "title": "VIBE: вход, продукты, выход",
-  "output": ".archify/architecture-vibe-20261004-240000/vibe.html",
+  "output": ".archify/architecture-vibe-20261005-190000/best/vibe.html",
   "quality_profile": "showcase",
   "legend": {
    "mode": "auto",
@@ -34,7 +34,7 @@
    "id": "invibe01",
    "type": "frontend",
    "label": "вход",
-   "sublabel": "резюме и кейсы",
+   "sublabel": "резюме, T-Track, кейсы",
    "pos": [
     205,
     60
@@ -62,7 +62,7 @@
    "id": "outvibe01",
    "type": "database",
    "label": "выход",
-   "sublabel": "презентация опыта и портфолио",
+   "sublabel": "карточка человека",
    "pos": [
     600,
     60
@@ -230,7 +230,7 @@
    "id": "outvibe05",
    "type": "database",
    "label": "выход",
-   "sublabel": "роли, компании, атмосфера, стиль руководителя",
+   "sublabel": "флаги, роли, атмосфера",
    "pos": [
     600,
     500
@@ -244,7 +244,7 @@
    "id": "profile",
    "type": "messagebus",
    "label": "Профиль вайба",
-   "sublabel": "итог VIBE",
+   "sublabel": "страница-профиль",
    "pos": [
     920,
     280
