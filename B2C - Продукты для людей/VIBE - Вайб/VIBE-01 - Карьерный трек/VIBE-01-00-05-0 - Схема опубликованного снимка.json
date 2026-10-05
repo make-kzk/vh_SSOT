@@ -1,0 +1,754 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Снимок карточки человека VIBE-01 (опубликованная версия)",
+  "description": "Схема опубликованного снимка: обязательные поля нужны для публикации. Поле private на странице не выводится.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "meta",
+    "header",
+    "profile",
+    "education",
+    "career",
+    "expertise",
+    "ttrack"
+  ],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "черновик",
+            "подтверждена частично",
+            "подтверждена полностью"
+          ]
+        },
+        "version": {
+          "type": "integer"
+        },
+        "updated": {
+          "type": "string",
+          "format": "date"
+        },
+        "confirmed_sections": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "status",
+        "version",
+        "updated"
+      ]
+    },
+    "header": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "position": {
+          "type": "string"
+        },
+        "experience": {
+          "type": "string",
+          "description": "годы и месяцы"
+        },
+        "unified_grade": {
+          "enum": [
+            "G1",
+            "G2",
+            "G3",
+            "G4",
+            "G5",
+            "G6",
+            "G7",
+            "G8"
+          ]
+        },
+        "domain_expertise": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "track": {
+          "enum": [
+            "P-Track",
+            "M-Track"
+          ]
+        },
+        "org_types": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "comment": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "position",
+        "experience",
+        "track"
+      ]
+    },
+    "profile": {
+      "type": "object",
+      "properties": {
+        "age": {
+          "type": "integer"
+        },
+        "location": {
+          "type": "string"
+        },
+        "citizenship": {
+          "type": "string"
+        },
+        "languages": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "language": {
+                "type": "string"
+              },
+              "level": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "language",
+              "level"
+            ]
+          }
+        },
+        "employment": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "business_trips": {
+          "type": "boolean"
+        },
+        "relocation": {
+          "type": "object",
+          "properties": {
+            "ready": {
+              "type": "boolean"
+            },
+            "cities": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ready"
+          ]
+        },
+        "comment": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "location"
+      ]
+    },
+    "education": {
+      "type": "object",
+      "properties": {
+        "education": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "institution": {
+                "type": "string"
+              },
+              "year": {
+                "type": "integer"
+              },
+              "specialty": {
+                "type": "string"
+              },
+              "degree": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "institution"
+            ]
+          }
+        },
+        "certifications": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "org": {
+                "type": "string"
+              },
+              "year": {
+                "type": "integer"
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "title"
+            ]
+          }
+        },
+        "publications": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              },
+              "year": {
+                "type": "integer"
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "title"
+            ]
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "career": {
+      "type": "object",
+      "properties": {
+        "jobs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "org": {
+                "type": "string"
+              },
+              "industry": {
+                "type": "string"
+              },
+              "position": {
+                "type": "string"
+              },
+              "from": {
+                "type": "string"
+              },
+              "to": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "org",
+              "position",
+              "from"
+            ]
+          }
+        },
+        "recommendations_count": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "jobs"
+      ]
+    },
+    "expertise": {
+      "type": "object",
+      "properties": {
+        "achievements": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "string"
+              },
+              "number": {
+                "type": "string"
+              },
+              "tool": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "result"
+            ]
+          }
+        },
+        "skills": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "stack": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "achievements"
+      ]
+    },
+    "ttrack": {
+      "type": "object",
+      "properties": {
+        "craft": {
+          "type": "object",
+          "properties": {
+            "level": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 6
+            },
+            "scale": {
+              "type": "string",
+              "description": "масштаб: числа или выбор значения из ответа человека"
+            },
+            "case": {
+              "type": "string",
+              "description": "случай из практики"
+            },
+            "rationale": {
+              "type": "object",
+              "properties": {
+                "fact": {
+                  "type": "string"
+                },
+                "criterion": {
+                  "type": "string"
+                },
+                "next": {
+                  "type": "string",
+                  "description": "что не хватает до следующего уровня"
+                }
+              },
+              "additionalProperties": false,
+              "required": [
+                "fact",
+                "criterion",
+                "next"
+              ]
+            },
+            "confirmed": {
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "level",
+            "rationale",
+            "confirmed"
+          ]
+        },
+        "leadership": {
+          "type": "object",
+          "properties": {
+            "level": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 6
+            },
+            "scale": {
+              "type": "string",
+              "description": "масштаб: числа или выбор значения из ответа человека"
+            },
+            "case": {
+              "type": "string",
+              "description": "случай из практики"
+            },
+            "rationale": {
+              "type": "object",
+              "properties": {
+                "fact": {
+                  "type": "string"
+                },
+                "criterion": {
+                  "type": "string"
+                },
+                "next": {
+                  "type": "string",
+                  "description": "что не хватает до следующего уровня"
+                }
+              },
+              "additionalProperties": false,
+              "required": [
+                "fact",
+                "criterion",
+                "next"
+              ]
+            },
+            "confirmed": {
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "level",
+            "rationale",
+            "confirmed"
+          ]
+        },
+        "processes": {
+          "type": "object",
+          "properties": {
+            "level": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 6
+            },
+            "scale": {
+              "type": "string",
+              "description": "масштаб: числа или выбор значения из ответа человека"
+            },
+            "case": {
+              "type": "string",
+              "description": "случай из практики"
+            },
+            "rationale": {
+              "type": "object",
+              "properties": {
+                "fact": {
+                  "type": "string"
+                },
+                "criterion": {
+                  "type": "string"
+                },
+                "next": {
+                  "type": "string",
+                  "description": "что не хватает до следующего уровня"
+                }
+              },
+              "additionalProperties": false,
+              "required": [
+                "fact",
+                "criterion",
+                "next"
+              ]
+            },
+            "confirmed": {
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "level",
+            "rationale",
+            "confirmed"
+          ]
+        },
+        "business": {
+          "type": "object",
+          "properties": {
+            "level": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 6
+            },
+            "scale": {
+              "type": "string",
+              "description": "масштаб: числа или выбор значения из ответа человека"
+            },
+            "case": {
+              "type": "string",
+              "description": "случай из практики"
+            },
+            "rationale": {
+              "type": "object",
+              "properties": {
+                "fact": {
+                  "type": "string"
+                },
+                "criterion": {
+                  "type": "string"
+                },
+                "next": {
+                  "type": "string",
+                  "description": "что не хватает до следующего уровня"
+                }
+              },
+              "additionalProperties": false,
+              "required": [
+                "fact",
+                "criterion",
+                "next"
+              ]
+            },
+            "confirmed": {
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "level",
+            "rationale",
+            "confirmed"
+          ]
+        },
+        "strategy": {
+          "type": "object",
+          "properties": {
+            "level": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 6
+            },
+            "scale": {
+              "type": "string",
+              "description": "масштаб: числа или выбор значения из ответа человека"
+            },
+            "case": {
+              "type": "string",
+              "description": "случай из практики"
+            },
+            "rationale": {
+              "type": "object",
+              "properties": {
+                "fact": {
+                  "type": "string"
+                },
+                "criterion": {
+                  "type": "string"
+                },
+                "next": {
+                  "type": "string",
+                  "description": "что не хватает до следующего уровня"
+                }
+              },
+              "additionalProperties": false,
+              "required": [
+                "fact",
+                "criterion",
+                "next"
+              ]
+            },
+            "confirmed": {
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "level",
+            "rationale",
+            "confirmed"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "craft",
+        "leadership",
+        "processes",
+        "business",
+        "strategy"
+      ]
+    },
+    "international": {
+      "type": "object",
+      "properties": {
+        "unified_grade": {
+          "type": "string"
+        },
+        "korn_ferry": {
+          "type": "string"
+        },
+        "mercer": {
+          "type": "string"
+        },
+        "radford": {
+          "type": "string"
+        },
+        "nkz_isco": {
+          "type": "string"
+        },
+        "comment": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "psychology": {
+      "type": "object",
+      "properties": {
+        "groups": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "label": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "label",
+                    "value"
+                  ]
+                }
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "title",
+              "items"
+            ]
+          }
+        },
+        "comment": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "groups"
+      ]
+    },
+    "cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "situation": {
+            "type": "string"
+          },
+          "task": {
+            "type": "string"
+          },
+          "actions": {
+            "type": "string"
+          },
+          "result": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          },
+          "confirmed": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "title",
+          "situation",
+          "task",
+          "actions",
+          "result"
+        ]
+      }
+    },
+    "flags": {
+      "type": "object",
+      "properties": {
+        "green": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "red": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "green",
+        "red"
+      ]
+    },
+    "private": {
+      "type": "object",
+      "properties": {
+        "contacts": {
+          "type": "object",
+          "properties": {
+            "phone": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "expectations": {
+          "type": "object",
+          "properties": {
+            "salary": {
+              "type": "string"
+            },
+            "work_format": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "source_resume": {
+          "type": "string"
+        },
+        "cover_letter": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "application": {
+      "type": "string",
+      "description": "область применения: типы задач и среды, без привязки к должности"
+    }
+  }
+}

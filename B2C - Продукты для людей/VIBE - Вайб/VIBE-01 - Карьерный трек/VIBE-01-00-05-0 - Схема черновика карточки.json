@@ -1,18 +1,9 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Карточка человека VIBE-01",
-  "description": "Данные страницы-профиля. Поля private на странице не выводятся. Статус: предположение агента, форматы ждут проверки Owner.",
+  "title": "Черновик карточки человека VIBE-01",
+  "description": "Схема черновика: заполняется по шагам, обязательны только служебные поля meta. Обязательные поля публикации проверяет схема опубликованного снимка.",
   "type": "object",
   "additionalProperties": false,
-  "required": [
-    "meta",
-    "header",
-    "profile",
-    "education",
-    "career",
-    "expertise",
-    "ttrack"
-  ],
   "properties": {
     "meta": {
       "type": "object",
@@ -96,13 +87,7 @@
           "type": "string"
         }
       },
-      "additionalProperties": false,
-      "required": [
-        "name",
-        "position",
-        "experience",
-        "track"
-      ]
+      "additionalProperties": false
     },
     "profile": {
       "type": "object",
@@ -128,11 +113,7 @@
                 "type": "string"
               }
             },
-            "additionalProperties": false,
-            "required": [
-              "language",
-              "level"
-            ]
+            "additionalProperties": false
           }
         },
         "employment": {
@@ -157,19 +138,13 @@
               }
             }
           },
-          "additionalProperties": false,
-          "required": [
-            "ready"
-          ]
+          "additionalProperties": false
         },
         "comment": {
           "type": "string"
         }
       },
-      "additionalProperties": false,
-      "required": [
-        "location"
-      ]
+      "additionalProperties": false
     },
     "education": {
       "type": "object",
@@ -192,10 +167,7 @@
                 "type": "string"
               }
             },
-            "additionalProperties": false,
-            "required": [
-              "institution"
-            ]
+            "additionalProperties": false
           }
         },
         "certifications": {
@@ -213,10 +185,7 @@
                 "type": "integer"
               }
             },
-            "additionalProperties": false,
-            "required": [
-              "title"
-            ]
+            "additionalProperties": false
           }
         },
         "publications": {
@@ -234,10 +203,7 @@
                 "type": "integer"
               }
             },
-            "additionalProperties": false,
-            "required": [
-              "title"
-            ]
+            "additionalProperties": false
           }
         }
       },
@@ -267,12 +233,7 @@
                 "type": "string"
               }
             },
-            "additionalProperties": false,
-            "required": [
-              "org",
-              "position",
-              "from"
-            ]
+            "additionalProperties": false
           }
         },
         "recommendations_count": {
@@ -280,10 +241,7 @@
           "minimum": 0
         }
       },
-      "additionalProperties": false,
-      "required": [
-        "jobs"
-      ]
+      "additionalProperties": false
     },
     "expertise": {
       "type": "object",
@@ -303,10 +261,7 @@
                 "type": "string"
               }
             },
-            "additionalProperties": false,
-            "required": [
-              "result"
-            ]
+            "additionalProperties": false
           }
         },
         "skills": {
@@ -322,10 +277,7 @@
           }
         }
       },
-      "additionalProperties": false,
-      "required": [
-        "achievements"
-      ]
+      "additionalProperties": false
     },
     "ttrack": {
       "type": "object",
@@ -360,23 +312,13 @@
                   "description": "что не хватает до следующего уровня"
                 }
               },
-              "additionalProperties": false,
-              "required": [
-                "fact",
-                "criterion",
-                "next"
-              ]
+              "additionalProperties": false
             },
             "confirmed": {
               "type": "boolean"
             }
           },
-          "additionalProperties": false,
-          "required": [
-            "level",
-            "rationale",
-            "confirmed"
-          ]
+          "additionalProperties": false
         },
         "leadership": {
           "type": "object",
@@ -408,23 +350,13 @@
                   "description": "что не хватает до следующего уровня"
                 }
               },
-              "additionalProperties": false,
-              "required": [
-                "fact",
-                "criterion",
-                "next"
-              ]
+              "additionalProperties": false
             },
             "confirmed": {
               "type": "boolean"
             }
           },
-          "additionalProperties": false,
-          "required": [
-            "level",
-            "rationale",
-            "confirmed"
-          ]
+          "additionalProperties": false
         },
         "processes": {
           "type": "object",
@@ -456,23 +388,13 @@
                   "description": "что не хватает до следующего уровня"
                 }
               },
-              "additionalProperties": false,
-              "required": [
-                "fact",
-                "criterion",
-                "next"
-              ]
+              "additionalProperties": false
             },
             "confirmed": {
               "type": "boolean"
             }
           },
-          "additionalProperties": false,
-          "required": [
-            "level",
-            "rationale",
-            "confirmed"
-          ]
+          "additionalProperties": false
         },
         "business": {
           "type": "object",
@@ -504,23 +426,13 @@
                   "description": "что не хватает до следующего уровня"
                 }
               },
-              "additionalProperties": false,
-              "required": [
-                "fact",
-                "criterion",
-                "next"
-              ]
+              "additionalProperties": false
             },
             "confirmed": {
               "type": "boolean"
             }
           },
-          "additionalProperties": false,
-          "required": [
-            "level",
-            "rationale",
-            "confirmed"
-          ]
+          "additionalProperties": false
         },
         "strategy": {
           "type": "object",
@@ -552,33 +464,16 @@
                   "description": "что не хватает до следующего уровня"
                 }
               },
-              "additionalProperties": false,
-              "required": [
-                "fact",
-                "criterion",
-                "next"
-              ]
+              "additionalProperties": false
             },
             "confirmed": {
               "type": "boolean"
             }
           },
-          "additionalProperties": false,
-          "required": [
-            "level",
-            "rationale",
-            "confirmed"
-          ]
+          "additionalProperties": false
         }
       },
-      "additionalProperties": false,
-      "required": [
-        "craft",
-        "leadership",
-        "processes",
-        "business",
-        "strategy"
-      ]
+      "additionalProperties": false
     },
     "international": {
       "type": "object",
@@ -627,29 +522,18 @@
                       "type": "string"
                     }
                   },
-                  "additionalProperties": false,
-                  "required": [
-                    "label",
-                    "value"
-                  ]
+                  "additionalProperties": false
                 }
               }
             },
-            "additionalProperties": false,
-            "required": [
-              "title",
-              "items"
-            ]
+            "additionalProperties": false
           }
         },
         "comment": {
           "type": "string"
         }
       },
-      "additionalProperties": false,
-      "required": [
-        "groups"
-      ]
+      "additionalProperties": false
     },
     "cases": {
       "type": "array",
@@ -678,14 +562,7 @@
             "type": "boolean"
           }
         },
-        "additionalProperties": false,
-        "required": [
-          "title",
-          "situation",
-          "task",
-          "actions",
-          "result"
-        ]
+        "additionalProperties": false
       }
     },
     "flags": {
@@ -704,11 +581,7 @@
           }
         }
       },
-      "additionalProperties": false,
-      "required": [
-        "green",
-        "red"
-      ]
+      "additionalProperties": false
     },
     "private": {
       "type": "object",
@@ -750,5 +623,8 @@
       "type": "string",
       "description": "область применения: типы задач и среды, без привязки к должности"
     }
-  }
+  },
+  "required": [
+    "meta"
+  ]
 }

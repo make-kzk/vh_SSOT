@@ -78,15 +78,6 @@
    "width": 172
   },
   {
-   "id": "cases",
-   "lane": "human",
-   "col": 4,
-   "type": "cloud",
-   "label": "4 Кейсы",
-   "sublabel": "форма на сайте, можно пропустить",
-   "width": 172
-  },
-  {
    "id": "ttrack",
    "lane": "human",
    "col": 3,
@@ -96,12 +87,12 @@
    "width": 172
   },
   {
-   "id": "grade",
-   "lane": "system",
-   "col": 5,
-   "type": "backend",
-   "label": "5 Грейдинг",
-   "sublabel": "трек, T-Track, навыки, стек",
+   "id": "cases",
+   "lane": "human",
+   "col": 4,
+   "type": "cloud",
+   "label": "4 Кейсы",
+   "sublabel": "форма на сайте, можно пропустить",
    "width": 172
   },
   {
@@ -111,6 +102,15 @@
    "type": "cloud",
    "label": "Подтверждение",
    "sublabel": "человек подтверждает или правит",
+   "width": 172
+  },
+  {
+   "id": "grade",
+   "lane": "system",
+   "col": 5,
+   "type": "backend",
+   "label": "5 Грейдинг",
+   "sublabel": "трек, T-Track, навыки, стек",
    "width": 172
   },
   {
