@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Профиль человека</title>
+<style>
+:root{--bg:#f5f6f8;--card:#fff;--ink:#1b1f27;--muted:#667085;--line:#e4e7ec;--acc:#0f766e;--acc-soft:#d9f2ee;--head:#f0f2f5;--bar:#cfd6e0;--g:#15803d;--r:#b42318}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1318;--card:#171c23;--ink:#e8ecf2;--muted:#98a2b3;--line:#2a313b;--acc:#4fd1c5;--acc-soft:#12332f;--head:#1e252e;--bar:#2c3541;--g:#4ade80;--r:#f97066}}
+:root[data-theme="dark"]{--bg:#0f1318;--card:#171c23;--ink:#e8ecf2;--muted:#98a2b3;--line:#2a313b;--acc:#4fd1c5;--acc-soft:#12332f;--head:#1e252e;--bar:#2c3541;--g:#4ade80;--r:#f97066}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:880px;margin:0 auto;padding:24px 16px 56px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:16px}
+h1{font-size:24px;margin:0 0 8px}h2{font-size:17px;margin:0 0 12px}h3{font-size:14px;margin:16px 0 6px}
+.sub{color:var(--muted)}.badge{display:inline-block;background:var(--acc-soft);color:var(--acc);border-radius:999px;padding:2px 12px;font-size:13px;font-weight:600;margin:0 6px 6px 0}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}th{background:var(--head);font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}td:first-child{width:34%;font-weight:600}
+ul,ol{margin:0;padding-left:20px}li{margin:6px 0}
+.cm{background:var(--head);border-radius:8px;padding:8px 12px;font-size:13px;color:var(--muted);margin-top:10px}
+.row{display:grid;grid-template-columns:140px 1fr 32px;gap:10px;align-items:center;margin:8px 0}.bar{height:10px;background:var(--bar);border-radius:6px;overflow:hidden}.bar i{display:block;height:100%;background:var(--acc)}.lvl{font-weight:700;text-align:right}
+.tags{display:flex;flex-wrap:wrap;gap:6px}.tag{border:1px solid var(--line);border-radius:8px;padding:2px 10px;font-size:13px}
+.cases{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}.case{border:1px solid var(--line);border-radius:10px;padding:12px;font-size:14px}.case h3{margin:0 0 6px;font-size:15px}.case dt{font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-top:6px}.case dd{margin:0}
+.g li::marker{color:var(--g)}.r li::marker{color:var(--r)}
+details{margin-top:8px;font-size:13px;color:var(--muted)}summary{cursor:pointer}
+.none{color:var(--muted);font-style:italic}.foot{color:var(--muted);font-size:13px;margin-top:8px}
+@media (max-width:560px){.row{grid-template-columns:1fr 32px}.row .nm{grid-column:1/-1}td:first-child{width:auto}}
+</style>
+</head>
+<body>
+<div class="wrap" id="root"></div>
+
+<!-- Данные карточки. Сервер подставляет сюда JSON по схеме VIBE-01-00-05-0 (без поля private). -->
+<script id="card-data" type="application/json">{"meta": {"id": "demo-0001", "status": "подтверждена полностью", "version": 3, "updated": "2026-10-05", "confirmed_sections": ["header", "profile", "career", "expertise", "ttrack"]}, "header": {"name": "Анна К.", "position": "HR-методолог", "experience": "14 лет", "unified_grade": "G6", "domain_expertise": ["оценка и развитие персонала", "кадровый резерв"], "track": "M-Track", "org_types": ["международные корпорации", "банки"], "comment": "Практик корпоративного контура: строит процессы оценки и развития."}, "profile": {"age": 41, "location": "Алматы, Казахстан", "citizenship": "Казахстан, разрешение на работу в Казахстане", "languages": [{"language": "казахский", "level": "родной"}, {"language": "русский", "level": "C2"}, {"language": "английский", "level": "C1"}], "employment": ["полная", "проектная"], "business_trips": true, "relocation": {"ready": false, "cities": []}, "comment": "Открыта к гибридному формату."}, "education": {"education": [{"institution": "Университет", "year": 2008, "specialty": "психология", "degree": "бакалавр"}, {"institution": "Бизнес-школа", "year": 2019, "specialty": "управление персоналом", "degree": "магистр"}], "certifications": [{"title": "Директор по персоналу", "org": "бизнес-школа", "year": 2025}, {"title": "Центры оценки и развития", "org": "международная сертификация", "year": 2022}], "publications": [{"title": "Системный подход к оценке потенциала", "type": "статья", "year": 2023}]}, "career": {"jobs": [{"org": "Консалтинг", "industry": "услуги для бизнеса", "position": "HR-консультант", "from": "2024", "to": "н.в."}, {"org": "Банк", "industry": "финансы", "position": "Руководитель управления развития персонала", "from": "2021", "to": "2024"}, {"org": "Международная корпорация", "industry": "промышленность", "position": "Специалист по оценке и развитию", "from": "2016", "to": "2021"}], "recommendations_count": 3}, "expertise": {"achievements": [{"result": "Внедрила центр оценки для кадрового резерва", "number": "2 кампании, 120 человек", "tool": "Assessment Center"}, {"result": "Сократила срок закрытия вакансий", "number": "62 → 41 день за 6 месяцев", "tool": "ATS"}, {"result": "Запустила адаптацию в 14 филиалах", "number": "текучесть первого года 28% → 19%", "tool": "программа адаптации"}, {"result": "Разработала модели компетенций", "number": "40 должностей", "tool": "профили ролей в LMS"}], "skills": ["Модели компетенций", "Кадровый резерв", "Центры оценки", "Карьерные треки", "Адаптация"], "stack": ["LMS", "HCM", "Power BI", "Notion"]}, "ttrack": {"craft": {"level": 5, "scale": "Модели компетенций на 40 ролей", "case": "Центр оценки для кадрового резерва: ситуация, действия, результат", "rationale": {"fact": "модели на 40 должностей, центр оценки", "criterion": "создаёт новые решения для сложных задач и обучает других", "next": "определять подходы направления"}, "confirmed": true}, "leadership": {"level": 4, "scale": "Команда 8 человек", "case": "Наставничество: ситуация, действия, результат", "rationale": {"fact": "команда 8 человек, наставничество", "criterion": "руководит командой 5-15 человек, развивает людей", "next": "руководить руководителями, выращивать преемников"}, "confirmed": true}, "processes": {"level": 5, "scale": "Процессы 14 филиалов", "case": "Единая адаптация: ситуация, действия, результат", "rationale": {"fact": "адаптация в 14 филиалах", "criterion": "отвечает за результат процессов нескольких подразделений", "next": "сквозные процессы организации"}, "confirmed": true}, "business": {"level": 3, "scale": "Бюджет программ развития", "case": "Снижение текучести: ситуация, действия, результат", "rationale": {"fact": "влияет на показатели функции, связи с P&L мало", "criterion": "отвечает за затраты задачи", "next": "бюджет и показатели функции"}, "confirmed": true}, "strategy": {"level": 4, "scale": "Горизонт 12 месяцев", "case": "Планирование развития функции", "rationale": {"fact": "план на год с учётом подразделений", "criterion": "год, контекст нескольких подразделений", "next": "горизонт 2-3 года и рынок"}, "confirmed": true}}, "international": {"unified_grade": "G6", "korn_ferry": "520-580", "mercer": "56-58", "radford": "M4 / M5", "nkz_isco": "1212 / 2423", "comment": "Обоснование по каждой системе: сложность задач, масштаб влияния, зона ответственности."}, "psychology": {"groups": [{"title": "Мировоззрение (VIBE-02)", "items": [{"label": "Ценности (SWRZ)", "value": "ведущие: безопасность, достижение"}, {"label": "Драйверы (ABCD)", "value": "шкалы мотивации определяются"}, {"label": "Неопределённость (NHUJ)", "value": "средняя терпимость"}, {"label": "Мышление (COGN)", "value": "выше среднего"}]}, {"title": "Стиль поведения (VIBE-03)", "items": [{"label": "Тип поведения (QWER)", "value": "напор и аналитичность"}, {"label": "Роль в команде (RH83)", "value": "организатор"}, {"label": "Стиль управления (ZVER)", "value": "директивно-системный"}]}, {"title": "Стиль коммуникации (VIBE-04)", "items": [{"label": "Взаимодействие (YOPI)", "value": "деловой, структурный"}]}, {"title": "Поведенческий стиль (DISC и Big Five, OCEAN)", "items": [{"label": "DISC", "value": "D / I с аналитическим компонентом C: уверенно аргументирует позицию перед руководством"}, {"label": "Openness", "value": "высокая: новые форматы обучения"}, {"label": "Conscientiousness", "value": "очень высокая: структурные документы, дисциплина процессов"}, {"label": "Extraversion", "value": "выше среднего: фасилитатор, спикер"}, {"label": "Agreeableness", "value": "умеренная: держит профессиональные границы"}, {"label": "Neuroticism", "value": "высокая устойчивость: антикризисный опыт"}]}, {"title": "Деструкторы стресса (Hogan HDS)", "items": [{"label": "Bold", "value": "привыкла к масштабным организациям, нетерпение к неструктурированным процессам"}, {"label": "Cautious / Procedural", "value": "опора на регламентированные подходы, что может замедлять быстрые итерации"}]}], "comment": "Раздел заполняется после прохождения тестов."}, "cases": [{"title": "Кадровый резерв на ключевые роли", "situation": "Нет преемников на ключевые должности.", "task": "Создать резерв и процедуру отбора.", "actions": "Внедрила центр оценки, критерии и план развития.", "result": "Готовность преемников 55% → 82% за год.", "role": "руководитель проекта", "confirmed": true}, {"title": "Адаптация новичков", "situation": "Высокая текучесть в первый год.", "task": "Единый процесс адаптации.", "actions": "План на 90 дней, наставники, замеры на 7, 30, 90 день.", "result": "Текучесть первого года 28% → 19%.", "role": "автор и руководитель", "confirmed": true}], "flags": {"green": ["Системно доводит процессы до результата с числом", "Опыт оценки и развития в крупных организациях", "Готова к командировкам"], "red": ["Мало опыта в условиях ограниченных ресурсов и быстрых итераций", "Слабая связь работы с P&L"]}}</script>
+
+<script>
+(function(){
+  var card;
+  try{ card = JSON.parse(document.getElementById('card-data').textContent); }
+  catch(e){ document.getElementById('root').textContent='Не удалось прочитать данные профиля.'; return; }
+
+  function el(tag, attrs, children){
+    var n=document.createElement(tag);
+    if(attrs){ for(var k in attrs){ if(k==='text') n.textContent=attrs[k]; else if(k==='class') n.className=attrs[k]; else n.setAttribute(k,attrs[k]); } }
+    (children||[]).forEach(function(c){ if(c==null) return; n.appendChild(typeof c==='string'?document.createTextNode(c):c); });
+    return n;
+  }
+  function has(v){ return v!==undefined && v!==null && v!=='' && !(Array.isArray(v)&&v.length===0); }
+  function kv(rows){ // rows: [label, value]
+    var t=el('table'); rows.forEach(function(r){ if(has(r[1])) t.appendChild(el('tr',null,[el('td',{text:r[0]}),el('td',{text:String(r[1])})])); }); return t; }
+  function comment(text){ return has(text)?el('div',{class:'cm',text:'Комментарий: '+text}):null; }
+  function section(title, kids){ return el('div',{class:'card'},[el('h2',{text:title})].concat(kids)); }
+  function none(title){ return section(title,[el('p',{class:'none',text:'Не пройдено'})]); }
+  function yn(b){ return b===true?'да':b===false?'нет':null; }
+
+  var root=document.getElementById('root'); var h=card.header||{}, p=card.profile||{};
+
+  // Шапка
+  root.appendChild(el('div',{class:'card'},[
+    el('h1',{text:h.name||''}),
+    el('div',null,[has(h.track)?el('span',{class:'badge',text:h.track}):null, has(h.unified_grade)?el('span',{class:'badge',text:'Грейд '+h.unified_grade}):null]),
+    kv([['Позиция',h.position],['Общий стаж',h.experience],['Единый грейд',h.unified_grade],['Доменная экспертиза',(h.domain_expertise||[]).join(', ')],['Трек',h.track],['Тип организации',(h.org_types||[]).join(', ')]]),
+    comment(h.comment)
+  ]));
+
+  // 1 Профиль
+  var langs=(p.languages||[]).map(function(l){return l.language+' ('+l.level+')';}).join(', ');
+  var rel=p.relocation?(p.relocation.ready?('да'+((p.relocation.cities||[]).length?': '+p.relocation.cities.join(', '):'')):'нет'):null;
+  root.appendChild(section('1. Профиль',[kv([['Возраст',p.age],['Локация',p.location],['Гражданство',p.citizenship],['Языки',langs],['Форма занятости',(p.employment||[]).join(', ')],['Готовность к командировкам',yn(p.business_trips)],['Готовность к переезду',rel]]),comment(p.comment)]));
+
+  // 2 Образование
+  var ed=card.education||{};
+  var s2=[];
+  if(has(ed.education)){ s2.push(el('h3',{text:'Образование'})); s2.push(el('ul',null,ed.education.map(function(x){return el('li',{text:[x.year,x.institution,x.specialty,x.degree].filter(has).join(', ')});}))); }
+  if(has(ed.certifications)){ s2.push(el('h3',{text:'Сертификации и курсы'})); s2.push(el('ul',null,ed.certifications.map(function(x){return el('li',{text:[x.year,x.title,x.org].filter(has).join(', ')});}))); }
+  if(has(ed.publications)){ s2.push(el('h3',{text:'Публикации'})); s2.push(el('ul',null,ed.publications.map(function(x){return el('li',{text:[x.year,x.title,x.type].filter(has).join(', ')});}))); }
+  root.appendChild(section('2. Образование и сертификаты',s2.length?s2:[el('p',{class:'none',text:'Нет данных'})]));
+
+  // 3 Профессиональный трек
+  var c=card.career||{}, s3=[];
+  s3.push(el('h3',{text:'Места работы'}));
+  s3.push(el('ul',null,(c.jobs||[]).map(function(j){return el('li',{text:j.from+' - '+(j.to||'н.в.')+': '+j.position+', '+j.org+(has(j.industry)?' ('+j.industry+')':'')});})));
+  s3.push(el('h3',{text:'Письменные рекомендации'}));
+  s3.push(el('p',{text:has(c.recommendations_count)&&c.recommendations_count>0?'Есть ('+c.recommendations_count+'). Имена и должности не показываются.':'Нет данных'}));
+  root.appendChild(section('3. Профессиональный трек',s3));
+
+  // 4 Экспертиза
+  var x=card.expertise||{}, s4=[];
+  s4.push(el('h3',{text:'Реестр достижений'}));
+  s4.push(el('ol',null,(x.achievements||[]).map(function(a){return el('li',{text:[a.result,a.number,a.tool&&('инструмент: '+a.tool)].filter(has).join('; ')});})));
+  if(has(x.skills)){ s4.push(el('h3',{text:'Навыки'})); s4.push(el('div',{class:'tags'},x.skills.map(function(t){return el('span',{class:'tag',text:t});}))); }
+  if(has(x.stack)){ s4.push(el('h3',{text:'Стек'})); s4.push(el('div',{class:'tags'},x.stack.map(function(t){return el('span',{class:'tag',text:t});}))); }
+  root.appendChild(section('4. Экспертиза и навыки',s4));
+
+  // 5-9 T-Track
+  var tt=card.ttrack||{};
+  [['craft','5. Профессиональное мастерство','Craft Mastery'],['leadership','6. Лидерство и развитие людей','Team Leadership'],['processes','7. Процессы и дисциплина','Processes & Delivery'],['business','8. Бизнес-мышление и влияние на ценность','Business & P&L'],['strategy','9. Стратегическое мышление и горизонт','Strategy & Vision']].forEach(function(v){
+    var d=tt[v[0]]; if(!d){ root.appendChild(none(v[1])); return; }
+    var kids=[el('div',{class:'sub',text:v[2]+', шкала 0-6'}),
+      el('div',{class:'row'},[el('span',{class:'nm',text:'Уровень'}),el('div',{class:'bar'},[el('i',{style:'width:'+Math.round(d.level/6*100)+'%'})]),el('span',{class:'lvl',text:String(d.level)})]),
+      kv([['Масштаб',d.scale],['Случай',d.case]])];
+    if(d.rationale){ kids.push(el('details',null,[el('summary',{text:'Обоснование уровня'}),el('p',{text:'Факт: '+d.rationale.fact}),el('p',{text:'Критерий: '+d.rationale.criterion}),el('p',{text:'Переход вверх: '+d.rationale.next})])); }
+    root.appendChild(section(v[1],kids));
+  });
+
+  // 10 Международные системы
+  var it=card.international;
+  root.appendChild(it?section('10. Оценка по международным методологиям и классификаторам',[kv([['Единая шкала грейдов',it.unified_grade],['Korn Ferry (Hay Points)',it.korn_ferry],['Mercer IPE',it.mercer],['Radford Aon',it.radford],['НКЗ РК / ISCO-08',it.nkz_isco]]),comment(it.comment)]):none('10. Оценка по международным методологиям и классификаторам'));
+
+  // 11 Психологический профиль
+  var ps=card.psychology;
+  if(ps&&has(ps.groups)){ var s11=[]; ps.groups.forEach(function(g){ s11.push(el('h3',{text:g.title})); s11.push(kv(g.items.map(function(i){return [i.label,i.value];}))); }); s11.push(comment(ps.comment)); root.appendChild(section('11. Психологический профиль',s11)); }
+  else root.appendChild(none('11. Психологический профиль'));
+
+  // 12 Кейсы (только если шаг 4 не пропущен)
+  if(has(card.cases)){
+    root.appendChild(section('12. Кейсы',[el('div',{class:'cases'},card.cases.map(function(k){return el('div',{class:'case'},[el('h3',{text:k.title}),el('dl',null,[el('dt',{text:'Ситуация'}),el('dd',{text:k.situation}),el('dt',{text:'Задача'}),el('dd',{text:k.task}),el('dt',{text:'Действия'}),el('dd',{text:k.actions}),el('dt',{text:'Результат'}),el('dd',{text:k.result})])]);}))]));
+  }
+
+  // 13, 14 Флаги
+  var fl=card.flags;
+  ['green','red'].forEach(function(k,i){
+    var title=(i===0?'13. Зелёные флаги':'14. Красные флаги');
+    if(fl&&has(fl[k])) root.appendChild(section(title,[el('ul',{class:i===0?'g':'r'},fl[k].map(function(t){return el('li',{text:t});}))]));
+    else root.appendChild(none(title));
+  });
+
+  var m=card.meta||{};
+  root.appendChild(el('p',{class:'foot',text:'Статус: '+(m.status||'')+(m.updated?', обновлено '+m.updated:'')+(m.version?', версия '+m.version:'')}));
+  document.title='Профиль: '+(h.name||'');
+})();
+</script>
+</body>
+</html>
