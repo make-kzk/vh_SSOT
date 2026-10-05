@@ -316,6 +316,13 @@
             },
             "confirmed": {
               "type": "boolean"
+            },
+            "source": {
+              "enum": [
+                "человек",
+                "гипотеза системы"
+              ],
+              "description": "кто задал уровень: человек подтвердил или система сгенерировала гипотезу"
             }
           },
           "additionalProperties": false
@@ -354,6 +361,13 @@
             },
             "confirmed": {
               "type": "boolean"
+            },
+            "source": {
+              "enum": [
+                "человек",
+                "гипотеза системы"
+              ],
+              "description": "кто задал уровень: человек подтвердил или система сгенерировала гипотезу"
             }
           },
           "additionalProperties": false
@@ -392,6 +406,13 @@
             },
             "confirmed": {
               "type": "boolean"
+            },
+            "source": {
+              "enum": [
+                "человек",
+                "гипотеза системы"
+              ],
+              "description": "кто задал уровень: человек подтвердил или система сгенерировала гипотезу"
             }
           },
           "additionalProperties": false
@@ -430,6 +451,13 @@
             },
             "confirmed": {
               "type": "boolean"
+            },
+            "source": {
+              "enum": [
+                "человек",
+                "гипотеза системы"
+              ],
+              "description": "кто задал уровень: человек подтвердил или система сгенерировала гипотезу"
             }
           },
           "additionalProperties": false
@@ -468,6 +496,13 @@
             },
             "confirmed": {
               "type": "boolean"
+            },
+            "source": {
+              "enum": [
+                "человек",
+                "гипотеза системы"
+              ],
+              "description": "кто задал уровень: человек подтвердил или система сгенерировала гипотезу"
             }
           },
           "additionalProperties": false

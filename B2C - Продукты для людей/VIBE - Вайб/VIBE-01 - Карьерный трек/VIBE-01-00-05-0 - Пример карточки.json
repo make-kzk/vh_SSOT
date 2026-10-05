@@ -165,7 +165,8 @@
         "criterion": "создаёт новые решения для сложных задач и обучает других",
         "next": "определять подходы направления"
       },
-      "confirmed": true
+      "confirmed": true,
+      "source": "человек"
     },
     "leadership": {
       "level": 4,
@@ -176,7 +177,8 @@
         "criterion": "руководит командой 5-15 человек, развивает людей",
         "next": "руководить руководителями, выращивать преемников"
       },
-      "confirmed": true
+      "confirmed": true,
+      "source": "человек"
     },
     "processes": {
       "level": 5,
@@ -187,7 +189,8 @@
         "criterion": "отвечает за результат процессов нескольких подразделений",
         "next": "сквозные процессы организации"
       },
-      "confirmed": true
+      "confirmed": true,
+      "source": "человек"
     },
     "business": {
       "level": 3,
@@ -198,7 +201,8 @@
         "criterion": "отвечает за затраты задачи",
         "next": "бюджет и показатели функции"
       },
-      "confirmed": true
+      "confirmed": true,
+      "source": "человек"
     },
     "strategy": {
       "level": 4,
@@ -209,7 +213,8 @@
         "criterion": "год, контекст нескольких подразделений",
         "next": "горизонт 2-3 года и рынок"
       },
-      "confirmed": true
+      "confirmed": true,
+      "source": "человек"
     }
   },
   "international": {
