@@ -745,6 +745,10 @@
         }
       },
       "additionalProperties": false
+    },
+    "application": {
+      "type": "string",
+      "description": "область применения: типы задач и среды, без привязки к должности"
     }
   }
 }
