@@ -3,7 +3,7 @@
  "diagram_type": "architecture",
  "meta": {
   "title": "RECR: продукты найма и люди",
-  "output": ".archify/architecture-recr-20261005-130000/best/recr.html",
+  "output": ".archify/architecture-recr-20261005-140000/best/recr.html",
   "quality_profile": "showcase",
   "legend": {
    "mode": "auto",
@@ -469,6 +469,32 @@
    "id": "o33",
    "from": "r5",
    "to": "r7",
+   "variant": "dashed"
+  },
+  {
+   "id": "o34",
+   "from": "r1",
+   "to": "r9",
+   "variant": "dashed",
+   "fromSide": "top",
+   "toSide": "top"
+  },
+  {
+   "id": "o35",
+   "from": "r7",
+   "to": "r9",
+   "variant": "dashed"
+  },
+  {
+   "id": "o36",
+   "from": "vibe",
+   "to": "r9",
+   "variant": "dashed"
+  },
+  {
+   "id": "o37",
+   "from": "r3",
+   "to": "r5",
    "variant": "dashed"
   }
  ],
